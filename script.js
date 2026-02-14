@@ -23,7 +23,8 @@ function initCatalogo() {
 
         grid.innerHTML = "";
 
-        let todosPerfumes = perfumes;
+        let perfumesExtra = JSON.parse(localStorage.getItem("perfumesExtra")) || [];
+        let todosPerfumes = [...perfumes, ...perfumesExtra];
 
         let perfumesFiltrados;
 
@@ -554,8 +555,8 @@ function renderDetallePerfume() {
     const params = new URLSearchParams(window.location.search);
     const id = parseInt(params.get("id"));
 
-    let todosPerfumes = perfumes;
-
+    let perfumesExtra = JSON.parse(localStorage.getItem("perfumesExtra")) || [];
+    let todosPerfumes = [...perfumes, ...perfumesExtra];
 
     const perfume = todosPerfumes.find(p => p.id === id);
     if (!perfume) return;
@@ -568,7 +569,7 @@ function renderDetallePerfume() {
         <div class="detail-layout">
 
             <div class="detail-left">
-                <div class="detail-image">
+                <div class="detail-image sticky-image">
                     <img src="${perfume.imagen}" alt="${perfume.nombre}">
                 </div>
 
@@ -622,6 +623,63 @@ function renderDetallePerfume() {
     `;
 }
 
+function initExportPerfumes() {
+
+    const btn = document.getElementById("exportPerfumesBtn");
+    if (!btn) return;
+
+    function actualizarTextoBoton() {
+        let perfumesGuardados = JSON.parse(localStorage.getItem("perfumesExtra")) || [];
+        btn.textContent = `Descargar perfumes.js (${perfumesGuardados.length})`;
+    }
+
+    actualizarTextoBoton();
+
+    btn.addEventListener("click", () => {
+
+        let perfumesGuardados = JSON.parse(localStorage.getItem("perfumesExtra")) || [];
+
+        if (!perfumesGuardados.length) {
+            alert("No hay perfumes en localStorage para exportar.");
+            return;
+        }
+
+        const contenido = `const perfumes = ${JSON.stringify(perfumesGuardados, null, 4)};`;
+
+        const blob = new Blob([contenido], { type: "text/javascript" });
+        const url = URL.createObjectURL(blob);
+
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "perfumes.js";
+        a.click();
+
+        URL.revokeObjectURL(url);
+    });
+}
+/* =================================================
+   ANIMACION SCROLL
+================================================= */
+function initImageScrollEffect() {
+
+    const imageContainer = document.querySelector(".sticky-image");
+    if (!imageContainer) return;
+
+    window.addEventListener("scroll", () => {
+
+        const scrollY = window.scrollY;
+        const scale = Math.max(0.8, 1 - scrollY / 1200);
+
+        imageContainer.style.transform = `scale(${scale})`;
+
+        if (scrollY > 100) {
+            imageContainer.style.boxShadow = "0 20px 40px rgba(0,0,0,0.15)";
+        } else {
+            imageContainer.style.boxShadow = "none";
+        }
+
+    });
+}
 
 /* =================================================
    INICIALIZACION GLOBAL
@@ -632,10 +690,12 @@ document.addEventListener("DOMContentLoaded", () => {
     initCatalogo();
     initAdminModal();
     initDiscountCalculation();
+    initImageScrollEffect();
     initImageSelectorModal();
     loadImageGrid();
     initTagsSystem();
     initUsoAdmin();
+    initExportPerfumes();
     initAdminSubmit();
     renderDetallePerfume();
 

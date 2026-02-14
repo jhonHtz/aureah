@@ -197,6 +197,7 @@ body {
     grid-template-columns: 1fr 1.2fr;
     gap: 10px;
     align-items: start;
+
 }
 
 /* Columna izquierda */
@@ -223,6 +224,7 @@ body {
     align-items: center;
     gap: 12px;
     justify-content: center;
+    flex-direction: column;
 }
 
 .detail-sub {
@@ -243,7 +245,7 @@ body {
 
 .detail-basic h2 {
     font-family: 'Inter', sans-serif;
-    font-size: 24px;
+    font-size: 18px;
     margin-bottom: 3px;
     letter-spacing: 1.1px;
 }
@@ -390,7 +392,7 @@ body {
     }
 
     .detail-image img {
-        max-height: 350px;
+        max-height: 300px;
     }
 }
 
@@ -467,6 +469,27 @@ body {
 
 .admin-card-controls button:hover {
     background: #8B5CF6;
+}
+
+/* ================ DESCARGAR LISTA PERFUMES EN ADMINNNNNN ================*/
+.export-btn {
+    align-self: center;
+    padding: 10px 26px;
+    border-radius: 30px;
+    background: #1F2937;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.3s ease;
+}
+
+.export-btn:hover {
+    background: #374151;
+}
+.botones-guardar {
+    display: flex;
+    justify-content: space-between;
 }
 
 /*==============  IMAGENES EN EL SELECTOR DE AGREGAR PERFUME  =============*/
@@ -583,7 +606,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 0px;
-    margin-top: 0px;
+    margin: 0px 50px 0px 50px;
     justify-content: center;
 }
 

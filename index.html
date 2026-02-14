@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auréa Parfums</title>
+    <title>Auréa</title>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
     <!-- NAVBAR -->
     <header class="navbar">
         <div class="logo">
-            <h1>Auréa Parfums</h1>
+            <h1>Auréa</h1>
         </div>
 
         <nav class="filters">
@@ -33,9 +33,7 @@
             <!-- Card ejemplo (luego se generarán dinámicamente) -->
             <a href="perfume.html?id=1" class="perfume-card" data-genero="mujer">
                 
-                <div class="image-container">
-                    <img src="assets/img/ejemplo.png" alt="Nombre del perfume">
-                </div>
+                
 
                 <div class="perfume-info">
                     <h3 class="perfume-name">Erba Pura</h3>
@@ -143,7 +141,15 @@
                 <div class="uso-admin-grid" id="usoAdminGrid"></div>
             </div>
 
-            <button type="submit">Guardar</button>
+            <div class="botones-guardar"> 
+                <button type="button" id="exportPerfumesBtn" class="export-btn">
+                    descargar lista perfumes
+                </button>
+
+                <button type="submit">Guardar</button>
+            </div>
+            
+
 
         </form>
 
