@@ -23,8 +23,7 @@ function initCatalogo() {
 
         grid.innerHTML = "";
 
-        let perfumesExtra = JSON.parse(localStorage.getItem("perfumesExtra")) || [];
-        let todosPerfumes = [...perfumes, ...perfumesExtra];
+        let todosPerfumes = perfumes;
 
         let perfumesFiltrados;
 
@@ -555,8 +554,8 @@ function renderDetallePerfume() {
     const params = new URLSearchParams(window.location.search);
     const id = parseInt(params.get("id"));
 
-    let perfumesExtra = JSON.parse(localStorage.getItem("perfumesExtra")) || [];
-    let todosPerfumes = [...perfumes, ...perfumesExtra];
+    let todosPerfumes = perfumes;
+
 
     const perfume = todosPerfumes.find(p => p.id === id);
     if (!perfume) return;
