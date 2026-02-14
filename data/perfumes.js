@@ -1,6 +1,4 @@
 const perfumes = [
-
-[
     {
         "id": 1771032501110,
         "marca": "COACH",
@@ -675,5 +673,4 @@ const perfumes = [
             }
         }
     }
-]
 ];
