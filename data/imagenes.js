@@ -15,6 +15,7 @@ const imagenesDisponibles = [
     "ggb.png",
     "ggbe.png",
     "bad.png",
+    "badparfum.png",
     "badelixir.png",
     "212.png",
     "212vip.png",
@@ -59,6 +60,9 @@ const imagenesDisponibles = [
     //  VALENTINO
     "mujercoral.png",
     "cora.png",
+    "coralhombre.png",
+    "valentino.png",
+    "extradose.png",
 
     //  JEAN PAUL GAULTIER
     "bellep.png",
@@ -74,6 +78,9 @@ const imagenesDisponibles = [
 
     //  GIORGIO ARMANI
     "mwylang.png",
+    "sedt.png",
+    "sint.png",
+    "sparfum.png",
 
     //  AZZARO
     "tmw.png",
