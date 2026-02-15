@@ -15,7 +15,10 @@ const imagenesDisponibles = [
     "ggb.png",
     "ggbe.png",
     "bad.png",
+    "badelixir.png",
     "212.png",
+    "212vip.png",
+
     
     //  YSL
     "libreedp.png",
@@ -27,6 +30,7 @@ const imagenesDisponibles = [
     "lightblue.png",
     "devotion.png",
     "k.png",
+    "theone.png",
     
     //  STHEPANE
     
@@ -39,6 +43,9 @@ const imagenesDisponibles = [
     "fame.png",
     "invictusedt.png",
     "invictuselixir.png",
+    "invictusparfum.png",
+    "1elixir.png",
+    "1royal.png",
 
     //  VERSACE
     "dylan-purple.png",
@@ -55,6 +62,15 @@ const imagenesDisponibles = [
 
     //  JEAN PAUL GAULTIER
     "bellep.png",
+    "scandal.png",
+    "scandaledt.png",
+    "scandalabsolu.png",
+    "paradise.png",
+    "lemale.png",
+    "lebeau.png",
+    "lebeauedt.png",
+    "elixir.png",
+
 
     //  GIORGIO ARMANI
     "mwylang.png",

@@ -1008,7 +1008,7 @@ const perfumes = [
         "genero": "mujer",
         "precioOriginal": 3840,
         "precioFinal": 2780,
-        "imagen": "assets/img/perfumes/cora.png",
+        "imagen": "assets/img/perfumes/mujercoral.png",
         "notas": {
             "salida": [
                 "kiwi",
@@ -1034,11 +1034,11 @@ const perfumes = [
                 "activo": true
             },
             "otono": {
-                "porcentaje": 19,
+                "porcentaje": 39,
                 "activo": false
             },
             "invierno": {
-                "porcentaje": 11,
+                "porcentaje": 21,
                 "activo": false
             },
             "dia": {
@@ -1046,7 +1046,7 @@ const perfumes = [
                 "activo": true
             },
             "noche": {
-                "porcentaje": 19,
+                "porcentaje": 49,
                 "activo": false
             }
         }
@@ -1834,6 +1834,592 @@ const perfumes = [
             },
             "noche": {
                 "porcentaje": 71,
+                "activo": true
+            }
+        },
+        "id": 1771136290356,
+        "marca": "VERSACE",
+        "nombre": "EROS 100ml",
+        "subtitulo": "EDT",
+        "genero": "hombre",
+        "precioOriginal": 2800,
+        "precioFinal": 1380,
+        "imagen": "assets/img/perfumes/erosedt.png",
+        "notas": {
+            "salida": [
+                "menta",
+                "manzana",
+                "limón (lima ácida)"
+            ],
+            "corazon": [
+                "haba tonka",
+                "ambroxan",
+                "geranio"
+            ],
+            "fondo": [
+                "vainilla de Madagascar",
+                "cedro de virginia",
+                "cedro del Atlas",
+                "vetiver",
+                "musgo de roble"
+            ]
+        },
+        "uso": {
+            "primavera": {
+                "porcentaje": 100,
+                "activo": true
+            },
+            "verano": {
+                "porcentaje": 81,
+                "activo": true
+            },
+            "otono": {
+                "porcentaje": 84,
+                "activo": true
+            },
+            "invierno": {
+                "porcentaje": 76,
+                "activo": true
+            },
+            "dia": {
+                "porcentaje": 89,
+                "activo": true
+            },
+            "noche": {
+                "porcentaje": 100,
+                "activo": true
+            }
+        }
+    },
+    {
+        "id": 1771137545001,
+        "marca": "VERSACE",
+        "nombre": "EROS EAU DE PARFUM 100ml",
+        "subtitulo": "EDP",
+        "genero": "hombre",
+        "precioOriginal": 3300,
+        "precioFinal": 1490,
+        "imagen": "assets/img/perfumes/eros.png",
+        "notas": {
+            "salida": [
+                "menta",
+                "manzana acaramelada",
+                "limón (lima ácida)",
+                "mandarina"
+            ],
+            "corazon": [
+                "ambroxan",
+                "geranio",
+                "esclarea"
+            ],
+            "fondo": [
+                "vainilla",
+                "cedro",
+                "sándalo",
+                "naranja amarga",
+                "pachulí",
+                "cuero"
+            ]
+        },
+        "uso": {
+            "primavera": {
+                "porcentaje": 89,
+                "activo": true
+            },
+            "verano": {
+                "porcentaje": 79,
+                "activo": true
+            },
+            "otono": {
+                "porcentaje": 94,
+                "activo": true
+            },
+            "invierno": {
+                "porcentaje": 84,
+                "activo": true
+            },
+            "dia": {
+                "porcentaje": 94,
+                "activo": true
+            },
+            "noche": {
+                "porcentaje": 100,
+                "activo": true
+            }
+        }
+    },
+    {
+        "id": 1771138437539,
+        "marca": "VERSACE",
+        "nombre": "ENERGY 100ml",
+        "subtitulo": "EDP",
+        "genero": "hombre",
+        "precioOriginal": 3300,
+        "precioFinal": 1589,
+        "imagen": "assets/img/perfumes/energy.png",
+        "notas": {
+            "salida": [
+                "limón (lima ácida)",
+                "lima (limón verde)",
+                "toronja (pomelo)",
+                "naranja sanguina",
+                "bergamota de Silicia",
+                "mandarina"
+            ],
+            "corazon": [
+                "pimienta rosa",
+                "ámbar blanco",
+                "grosellas negras"
+            ],
+            "fondo": [
+                "almizcle blanco",
+                "musgo de roble",
+                "pachulí"
+            ]
+        },
+        "uso": {
+            "primavera": {
+                "porcentaje": 84,
+                "activo": true
+            },
+            "verano": {
+                "porcentaje": 96,
+                "activo": true
+            },
+            "otono": {
+                "porcentaje": 26,
+                "activo": false
+            },
+            "invierno": {
+                "porcentaje": 16,
+                "activo": false
+            },
+            "dia": {
+                "porcentaje": 84,
+                "activo": true
+            },
+            "noche": {
+                "porcentaje": 36,
+                "activo": false
+            }
+        }
+    },
+    {
+        "id": 1771138996168,
+        "marca": "CAROLINA HERRERA",
+        "nombre": "212 VIP BLACK 100ml",
+        "subtitulo": "EDP",
+        "genero": "hombre",
+        "precioOriginal": 2680,
+        "precioFinal": 1730,
+        "imagen": "assets/img/perfumes/212.png",
+        "notas": {
+            "salida": [
+                "absenta",
+                "anis",
+                "hinojo"
+            ],
+            "corazon": [
+                "lavanda"
+            ],
+            "fondo": [
+                "vaina de vainilla negra",
+                "almizcle"
+            ]
+        },
+        "uso": {
+            "primavera": {
+                "porcentaje": 41,
+                "activo": false
+            },
+            "verano": {
+                "porcentaje": 29,
+                "activo": false
+            },
+            "otono": {
+                "porcentaje": 89,
+                "activo": true
+            },
+            "invierno": {
+                "porcentaje": 99,
+                "activo": true
+            },
+            "dia": {
+                "porcentaje": 50,
+                "activo": false
+            },
+            "noche": {
+                "porcentaje": 100,
+                "activo": true
+            }
+        }
+    },
+    {
+        "id": 1771139505419,
+        "marca": "CAROLINA HERRERA",
+        "nombre": "212 VIP MEN 100ml",
+        "subtitulo": "EDT",
+        "genero": "hombre",
+        "precioOriginal": 2550,
+        "precioFinal": 1490,
+        "imagen": "assets/img/perfumes/212vip.png",
+        "notas": {
+            "salida": [
+                "maracuya",
+                "lima (limón verde)",
+                "pimienta",
+                "jengibre"
+            ],
+            "corazon": [
+                "vodka",
+                "ginebra",
+                "menta",
+                "especias"
+            ],
+            "fondo": [
+                "ámbar",
+                "cuero",
+                "notas amaderadas"
+            ]
+        },
+        "uso": {
+            "primavera": {
+                "porcentaje": 46,
+                "activo": false
+            },
+            "verano": {
+                "porcentaje": 29,
+                "activo": false
+            },
+            "otono": {
+                "porcentaje": 81,
+                "activo": true
+            },
+            "invierno": {
+                "porcentaje": 84,
+                "activo": true
+            },
+            "dia": {
+                "porcentaje": 61,
+                "activo": true
+            },
+            "noche": {
+                "porcentaje": 100,
+                "activo": true
+            }
+        }
+    },
+    {
+        "id": 1771140212551,
+        "marca": "RABANNE",
+        "nombre": "INVICTUS 100ml",
+        "subtitulo": "EDT",
+        "genero": "hombre",
+        "precioOriginal": 2790,
+        "precioFinal": 1690,
+        "imagen": "assets/img/perfumes/invictusedt.png",
+        "notas": {
+            "salida": [
+                "notas marinas",
+                "toronja (pomelo)",
+                "mandarina"
+            ],
+            "corazon": [
+                "hoja de laurel",
+                "jazmín"
+            ],
+            "fondo": [
+                "ámbar gris",
+                "madera de gaiac",
+                "musgo de roble",
+                "pachulí"
+            ]
+        },
+        "uso": {
+            "primavera": {
+                "porcentaje": 91,
+                "activo": true
+            },
+            "verano": {
+                "porcentaje": 100,
+                "activo": true
+            },
+            "otono": {
+                "porcentaje": 31,
+                "activo": false
+            },
+            "invierno": {
+                "porcentaje": 21,
+                "activo": false
+            },
+            "dia": {
+                "porcentaje": 94,
+                "activo": true
+            },
+            "noche": {
+                "porcentaje": 31,
+                "activo": false
+            }
+        }
+    },
+    {
+        "id": 1771140621693,
+        "marca": "RABANNE",
+        "nombre": "INVICTUS VICTORY ELIXIR 100ml",
+        "subtitulo": "EDP",
+        "genero": "hombre",
+        "precioOriginal": 3350,
+        "precioFinal": 2150,
+        "imagen": "assets/img/perfumes/invictuselixir.png",
+        "notas": {
+            "salida": [
+                "lavanda",
+                "cardamomo",
+                "pimienta negra"
+            ],
+            "corazon": [
+                "incienso",
+                "pachulí"
+            ],
+            "fondo": [
+                "vaina de vainilla",
+                "haba tonka"
+            ]
+        },
+        "uso": {
+            "primavera": {
+                "porcentaje": 36,
+                "activo": false
+            },
+            "verano": {
+                "porcentaje": 29,
+                "activo": false
+            },
+            "otono": {
+                "porcentaje": 84,
+                "activo": true
+            },
+            "invierno": {
+                "porcentaje": 96,
+                "activo": true
+            },
+            "dia": {
+                "porcentaje": 24,
+                "activo": false
+            },
+            "noche": {
+                "porcentaje": 100,
+                "activo": true
+            }
+        }
+    },
+    {
+        "id": 1771141330977,
+        "marca": "RABANNE",
+        "nombre": "INVICTUS PARFUM 100ml",
+        "subtitulo": "Parfum",
+        "genero": "hombre",
+        "precioOriginal": 3210,
+        "precioFinal": 2260,
+        "imagen": "assets/img/perfumes/invictusparfum.png",
+        "notas": {
+            "salida": [
+                "notas marinas",
+                "lavanda",
+                "pimienta rosa"
+            ],
+            "corazon": [
+                "jabón",
+                "hoja de violeta",
+                "mirto"
+            ],
+            "fondo": [
+                "almizcle",
+                "cachemira",
+                "sándalo"
+            ]
+        },
+        "uso": {
+            "primavera": {
+                "porcentaje": 89,
+                "activo": true
+            },
+            "verano": {
+                "porcentaje": 89,
+                "activo": true
+            },
+            "otono": {
+                "porcentaje": 79,
+                "activo": true
+            },
+            "invierno": {
+                "porcentaje": 19,
+                "activo": false
+            },
+            "dia": {
+                "porcentaje": 99,
+                "activo": true
+            },
+            "noche": {
+                "porcentaje": 79,
+                "activo": true
+            }
+        }
+    },
+    {
+        "id": 1771186094584,
+        "marca": "DOLCE&GABBANA",
+        "nombre": "THE ONE 100ml",
+        "subtitulo": "EDP",
+        "genero": "hombre",
+        "precioOriginal": 2750,
+        "precioFinal": 1850,
+        "imagen": "assets/img/perfumes/theone.png",
+        "notas": {
+            "salida": [
+                "toronja (pomelo)",
+                "cilantro",
+                "albahaca"
+            ],
+            "corazon": [
+                "cardamomo",
+                "jengibre",
+                "flor de azahar del naranjo"
+            ],
+            "fondo": [
+                "ámbar",
+                "tabaco",
+                "cedro"
+            ]
+        },
+        "uso": {
+            "primavera": {
+                "porcentaje": 41,
+                "activo": false
+            },
+            "verano": {
+                "porcentaje": 24,
+                "activo": false
+            },
+            "otono": {
+                "porcentaje": 91,
+                "activo": true
+            },
+            "invierno": {
+                "porcentaje": 91,
+                "activo": true
+            },
+            "dia": {
+                "porcentaje": 39,
+                "activo": false
+            },
+            "noche": {
+                "porcentaje": 100,
+                "activo": true
+            }
+        }
+    },
+    {
+        "id": 1771186654532,
+        "marca": "RABANNE",
+        "nombre": "1 MILLION ELIXIR 100ml",
+        "subtitulo": "Intense",
+        "genero": "hombre",
+        "precioOriginal": 3350,
+        "precioFinal": 2280,
+        "imagen": "assets/img/perfumes/1elixir.png",
+        "notas": {
+            "salida": [
+                "manzana",
+                "davana"
+            ],
+            "corazon": [
+                "rosa de Damasco",
+                "cedro",
+                "osmanto"
+            ],
+            "fondo": [
+                "absoluto de vainilla",
+                "haba tonka",
+                "pachulí"
+            ]
+        },
+        "uso": {
+            "primavera": {
+                "porcentaje": 36,
+                "activo": false
+            },
+            "verano": {
+                "porcentaje": 24,
+                "activo": false
+            },
+            "otono": {
+                "porcentaje": 84,
+                "activo": true
+            },
+            "invierno": {
+                "porcentaje": 100,
+                "activo": true
+            },
+            "dia": {
+                "porcentaje": 50,
+                "activo": false
+            },
+            "noche": {
+                "porcentaje": 91,
+                "activo": true
+            }
+        }
+    },
+    {
+        "id": 1771186834207,
+        "marca": "RABANNE",
+        "nombre": "1 MILLION ROYAL 100ml",
+        "subtitulo": "Parfum",
+        "genero": "hombre",
+        "precioOriginal": 3210,
+        "precioFinal": 2190,
+        "imagen": "assets/img/perfumes/1royal.png",
+        "notas": {
+            "salida": [
+                "cardamomo",
+                "tangerina",
+                "bergamota"
+            ],
+            "corazon": [
+                "lavanda",
+                "salvia",
+                "hoja de violeta"
+            ],
+            "fondo": [
+                "benjuí",
+                "cedro",
+                "pachulí"
+            ]
+        },
+        "uso": {
+            "primavera": {
+                "porcentaje": 44,
+                "activo": false
+            },
+            "verano": {
+                "porcentaje": 31,
+                "activo": false
+            },
+            "otono": {
+                "porcentaje": 100,
+                "activo": true
+            },
+            "invierno": {
+                "porcentaje": 100,
+                "activo": true
+            },
+            "dia": {
+                "porcentaje": 41,
+                "activo": false
+            },
+            "noche": {
+                "porcentaje": 100,
                 "activo": true
             }
         }
