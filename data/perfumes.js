@@ -3230,7 +3230,7 @@ const perfumes = [
     {
         "id": 1771197748257,
         "marca": "GIORGIO ARMANI",
-        "nombre": "STRONGER WITH YOU PARFUM100ml",
+        "nombre": "STRONGER WITH YOU PARFUM 100ml",
         "subtitulo": "Parfum",
         "genero": "hombre",
         "precioOriginal": 3090,
@@ -3275,6 +3275,465 @@ const perfumes = [
             },
             "noche": {
                 "porcentaje": 94,
+                "activo": true
+            }
+        }
+    },
+        {
+        "id": 1771261446519,
+        "marca": "GIORGIO ARMANI",
+        "nombre": "PROFONDO 100ml",
+        "subtitulo": "EDP",
+        "genero": "hombre",
+        "precioOriginal": 3600,
+        "precioFinal": 2460,
+        "imagen": "assets/img/perfumes/profondoedp.png",
+        "notas": {
+            "salida": [
+                "notas marinas",
+                "mandarina verde"
+            ],
+            "corazon": [
+                "lavanda",
+                "romero"
+            ],
+            "fondo": [
+                "notas minerales",
+                "ámbar gris",
+                "almizcle",
+                "cedro",
+                "pachulí"
+            ]
+        },
+        "uso": {
+            "primavera": {
+                "porcentaje": 76,
+                "activo": true
+            },
+            "verano": {
+                "porcentaje": 100,
+                "activo": true
+            },
+            "otono": {
+                "porcentaje": 21,
+                "activo": false
+            },
+            "invierno": {
+                "porcentaje": 16,
+                "activo": false
+            },
+            "dia": {
+                "porcentaje": 100,
+                "activo": true
+            },
+            "noche": {
+                "porcentaje": 39,
+                "activo": false
+            }
+        }
+    },
+    {
+        "id": 1771261621880,
+        "marca": "GIORGIO ARMANI",
+        "nombre": "PROFONDO 100ml",
+        "subtitulo": "Parfum",
+        "genero": "hombre",
+        "precioOriginal": 4050,
+        "precioFinal": 2560,
+        "imagen": "assets/img/perfumes/profondoparfum.png",
+        "notas": {
+            "salida": [
+                "notas marinas",
+                "mandarina verde"
+            ],
+            "corazon": [
+                "mimosa"
+            ],
+            "fondo": [
+                "pachulí",
+                "ládano"
+            ]
+        },
+        "uso": {
+            "primavera": {
+                "porcentaje": 81,
+                "activo": true
+            },
+            "verano": {
+                "porcentaje": 100,
+                "activo": true
+            },
+            "otono": {
+                "porcentaje": 19,
+                "activo": false
+            },
+            "invierno": {
+                "porcentaje": 11,
+                "activo": false
+            },
+            "dia": {
+                "porcentaje": 100,
+                "activo": true
+            },
+            "noche": {
+                "porcentaje": 26,
+                "activo": false
+            }
+        }
+    },
+    {
+        "id": 1771264347295,
+        "marca": "VALENTINO",
+        "nombre": "BIR EAU DE TOILETTE 100ml",
+        "subtitulo": "EDT",
+        "genero": "hombre",
+        "precioOriginal": 3150,
+        "precioFinal": 2400,
+        "imagen": "assets/img/perfumes/valentinoedt.png",
+        "notas": {
+            "salida": [
+                "notas minerales",
+                "hoja de violeta",
+                "sal"
+            ],
+            "corazon": [
+                "salvia",
+                "jengibre"
+            ],
+            "fondo": [
+                "notas amaderadas",
+                "vetiver"
+            ]
+        },
+        "uso": {
+            "primavera": {
+                "porcentaje": 94,
+                "activo": true
+            },
+            "verano": {
+                "porcentaje": 99,
+                "activo": true
+            },
+            "otono": {
+                "porcentaje": 79,
+                "activo": true
+            },
+            "invierno": {
+                "porcentaje": 19,
+                "activo": false
+            },
+            "dia": {
+                "porcentaje": 100,
+                "activo": true
+            },
+            "noche": {
+                "porcentaje": 61,
+                "activo": true
+            }
+        }
+    },
+    {
+        "id": 1771264723350,
+        "marca": "VALENTINO",
+        "nombre": "DONNA 100ml",
+        "subtitulo": "EDP",
+        "genero": "mujer",
+        "precioOriginal": 3840,
+        "precioFinal": 2440,
+        "imagen": "assets/img/perfumes/donnaedp.png",
+        "notas": {
+            "salida": [
+                "grosellas negras",
+                "pimienta rosa",
+                "bergamota"
+            ],
+            "corazon": [
+                "jazmín",
+                "jazmín sambac (sampaguita)",
+                "té de jazmín"
+            ],
+            "fondo": [
+                "vainilla de Bourbon",
+                "cachemira",
+                "madera de gaiac"
+            ]
+        },
+        "uso": {
+            "primavera": {
+                "porcentaje": 99,
+                "activo": true
+            },
+            "verano": {
+                "porcentaje": 66,
+                "activo": true
+            },
+            "otono": {
+                "porcentaje": 99,
+                "activo": true
+            },
+            "invierno": {
+                "porcentaje": 86,
+                "activo": true
+            },
+            "dia": {
+                "porcentaje": 100,
+                "activo": true
+            },
+            "noche": {
+                "porcentaje": 86,
+                "activo": true
+            }
+        }
+    },
+    {
+        "id": 1771264850230,
+        "marca": "VALENTINO",
+        "nombre": "DONNA INTENSE 100ml",
+        "subtitulo": "EDP",
+        "genero": "mujer",
+        "precioOriginal": 3940,
+        "precioFinal": 3200,
+        "imagen": "assets/img/perfumes/donnaintense.png",
+        "notas": {
+            "salida": [
+                "vainilla de Bourbon",
+                "ámbar"
+            ],
+            "corazon": [
+                "jazmín"
+            ],
+            "fondo": [
+                "benjuí"
+            ]
+        },
+        "uso": {
+            "primavera": {
+                "porcentaje": 46,
+                "activo": false
+            },
+            "verano": {
+                "porcentaje": 29,
+                "activo": false
+            },
+            "otono": {
+                "porcentaje": 89,
+                "activo": true
+            },
+            "invierno": {
+                "porcentaje": 91,
+                "activo": true
+            },
+            "dia": {
+                "porcentaje": 36,
+                "activo": false
+            },
+            "noche": {
+                "porcentaje": 100,
+                "activo": true
+            }
+        }
+    },
+    {
+        "id": 1771265432293,
+        "marca": "YVES SAINT LAURENT",
+        "nombre": "Y 100ml",
+        "subtitulo": "EDP",
+        "genero": "hombre",
+        "precioOriginal": 3600,
+        "precioFinal": 2450,
+        "imagen": "assets/img/perfumes/ysl.png",
+        "notas": {
+            "salida": [
+                "manzana",
+                "jengibre",
+                "bergamota"
+            ],
+            "corazon": [
+                "salvia",
+                "bayas de enebro",
+                "geranio"
+            ],
+            "fondo": [
+                "amberwood",
+                "haba tonka",
+                "cedro",
+                "vetiver"
+            ]
+        },
+        "uso": {
+            "primavera": {
+                "porcentaje": 94,
+                "activo": true
+            },
+            "verano": {
+                "porcentaje": 100,
+                "activo": true
+            },
+            "otono": {
+                "porcentaje": 84,
+                "activo": true
+            },
+            "invierno": {
+                "porcentaje": 26,
+                "activo": false
+            },
+            "dia": {
+                "porcentaje": 100,
+                "activo": true
+            },
+            "noche": {
+                "porcentaje": 89,
+                "activo": true
+            }
+        }
+    },
+    {
+        "id": 1771265770598,
+        "marca": "YVES SAINT LAURENT",
+        "nombre": "MYSLF 100ml",
+        "subtitulo": "EDP",
+        "genero": "hombre",
+        "precioOriginal": 3700,
+        "precioFinal": 2550,
+        "imagen": "assets/img/perfumes/myslf.png",
+        "notas": {
+            "salida": [
+                "bergamota de Calabria",
+                "bergamota"
+            ],
+            "corazon": [
+                "flor del naranjo tunesino"
+            ],
+            "fondo": [
+                "ambrofix",
+                "pachulí"
+            ]
+        },
+        "uso": {
+            "primavera": {
+                "porcentaje": 84,
+                "activo": true
+            },
+            "verano": {
+                "porcentaje": 96,
+                "activo": true
+            },
+            "otono": {
+                "porcentaje": 84,
+                "activo": true
+            },
+            "invierno": {
+                "porcentaje": 29,
+                "activo": false
+            },
+            "dia": {
+                "porcentaje": 94,
+                "activo": true
+            },
+            "noche": {
+                "porcentaje": 91,
+                "activo": true
+            }
+        }
+    },
+    {
+        "id": 1771267259810,
+        "marca": "DIOR",
+        "nombre": "SAUVAGE 100ml",
+        "subtitulo": "EDP",
+        "genero": "hombre",
+        "precioOriginal": 3650,
+        "precioFinal": 3150,
+        "imagen": "assets/img/perfumes/sauvageedp.png",
+        "notas": {
+            "salida": [
+                "bergamota"
+            ],
+            "corazon": [
+                "pimienta de Sichuan",
+                "lavanda",
+                "anis estrellado",
+                "nuez moscada"
+            ],
+            "fondo": [
+                "ambroxan",
+                "vainilla"
+            ]
+        },
+        "uso": {
+            "primavera": {
+                "porcentaje": 100,
+                "activo": true
+            },
+            "verano": {
+                "porcentaje": 89,
+                "activo": true
+            },
+            "otono": {
+                "porcentaje": 100,
+                "activo": true
+            },
+            "invierno": {
+                "porcentaje": 86,
+                "activo": true
+            },
+            "dia": {
+                "porcentaje": 96,
+                "activo": true
+            },
+            "noche": {
+                "porcentaje": 91,
+                "activo": true
+            }
+        }
+    },
+    {
+        "id": 1771267411809,
+        "marca": "DIOR",
+        "nombre": "SAUVAGE 100ml",
+        "subtitulo": "Parfum",
+        "genero": "hombre",
+        "precioOriginal": 4380,
+        "precioFinal": 3380,
+        "imagen": "assets/img/perfumes/sauvageparfum.png",
+        "notas": {
+            "salida": [
+                "bergamota",
+                "mandarina",
+                "elemí"
+            ],
+            "corazon": [
+                "sándalo"
+            ],
+            "fondo": [
+                "haba tonka",
+                "vainilla",
+                "incienso de olíbano"
+            ]
+        },
+        "uso": {
+            "primavera": {
+                "porcentaje": 96,
+                "activo": true
+            },
+            "verano": {
+                "porcentaje": 50,
+                "activo": false
+            },
+            "otono": {
+                "porcentaje": 89,
+                "activo": true
+            },
+            "invierno": {
+                "porcentaje": 96,
+                "activo": true
+            },
+            "dia": {
+                "porcentaje": 84,
+                "activo": true
+            },
+            "noche": {
+                "porcentaje": 91,
                 "activo": true
             }
         }

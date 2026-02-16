@@ -26,6 +26,8 @@ const imagenesDisponibles = [
     "yslblack.png",
     "yslgris.png",
     "mon.png",
+    "ysl.png",
+    "myslf.png",
     
     //  DOLCE & GABANNA
     "lightblue.png",
@@ -60,8 +62,11 @@ const imagenesDisponibles = [
     //  VALENTINO
     "mujercoral.png",
     "cora.png",
+    "donnaedp.png",
+    "donnaintense.png",
     "coralhombre.png",
     "valentino.png",
+    "valentinoedt.png",
     "extradose.png",
 
     //  JEAN PAUL GAULTIER
@@ -81,11 +86,17 @@ const imagenesDisponibles = [
     "sedt.png",
     "sint.png",
     "sparfum.png",
+    "profondoedp.png",
+    "profondoparfum.png",
 
     //  AZZARO
     "tmw.png",
     "tmwi.png",
     "tmwp.png",
+
+    //  DIOR
+    "sauvageedp.png",
+    "sauvageparfum.png",
 
     //  MONTBLANC
     "mb.png",
