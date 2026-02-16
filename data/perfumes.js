@@ -2427,31 +2427,28 @@ const perfumes = [
         }
     },
         {
-        "id": 1771136290356,
-        "marca": "VERSACE",
-        "nombre": "EROS 100ml",
-        "subtitulo": "EDT",
+        "id": 1771192217325,
+        "marca": "CAROLINA HERRERA",
+        "nombre": "BAD BOY COBALT 100ml",
+        "subtitulo": "EDP",
         "genero": "hombre",
-        "precioOriginal": 2800,
-        "precioFinal": 1380,
-        "imagen": "assets/img/perfumes/erosedt.png",
+        "precioOriginal": 3025,
+        "precioFinal": 2170,
+        "imagen": "assets/img/perfumes/bad.png",
         "notas": {
             "salida": [
-                "menta",
-                "manzana",
-                "limón (lima ácida)"
+                "lavanda",
+                "pimienta rosa"
             ],
             "corazon": [
-                "haba tonka",
-                "ambroxan",
+                "ciruela",
                 "geranio"
             ],
             "fondo": [
-                "vainilla de Madagascar",
-                "cedro de virginia",
-                "cedro del Atlas",
+                "cedro",
                 "vetiver",
-                "musgo de roble"
+                "trufa",
+                "roble"
             ]
         },
         "uso": {
@@ -2460,76 +2457,69 @@ const perfumes = [
                 "activo": true
             },
             "verano": {
+                "porcentaje": 100,
+                "activo": true
+            },
+            "otono": {
                 "porcentaje": 81,
                 "activo": true
             },
-            "otono": {
-                "porcentaje": 84,
-                "activo": true
-            },
             "invierno": {
-                "porcentaje": 76,
-                "activo": true
+                "porcentaje": 31,
+                "activo": false
             },
             "dia": {
-                "porcentaje": 89,
+                "porcentaje": 99,
                 "activo": true
             },
             "noche": {
-                "porcentaje": 100,
+                "porcentaje": 91,
                 "activo": true
             }
         }
     },
     {
-        "id": 1771137545001,
-        "marca": "VERSACE",
-        "nombre": "EROS EAU DE PARFUM 100ml",
+        "id": 1771192384412,
+        "marca": "CAROLINA HERRERA",
+        "nombre": "BAD BOY COBALT ELIXIR 100ml",
         "subtitulo": "EDP",
         "genero": "hombre",
-        "precioOriginal": 3300,
-        "precioFinal": 1490,
-        "imagen": "assets/img/perfumes/eros.png",
+        "precioOriginal": 3455,
+        "precioFinal": 2390,
+        "imagen": "assets/img/perfumes/badelixir.png",
         "notas": {
             "salida": [
-                "menta",
-                "manzana acaramelada",
-                "limón (lima ácida)",
-                "mandarina"
+                "pimienta negra",
+                "salvia"
             ],
             "corazon": [
-                "ambroxan",
-                "geranio",
-                "esclarea"
+                "trufa",
+                "notas amaderadas"
             ],
             "fondo": [
                 "vainilla",
-                "cedro",
-                "sándalo",
-                "naranja amarga",
-                "pachulí",
-                "cuero"
+                "incienso"
             ]
         },
         "uso": {
             "primavera": {
-                "porcentaje": 89,
+                "porcentaje": 99,
                 "activo": true
             },
             "verano": {
-                "porcentaje": 79,
-                "activo": true
+                "porcentaje": 36,
+                "activo": false
             },
             "otono": {
-                "porcentaje": 94,
+                "porcentaje": 99,
                 "activo": true
             },
             "invierno": {
-                "porcentaje": 84,
+                "porcentaje": 100,
                 "activo": true
             },
             "dia": {
-                "porcentaje": 94,
+                "porcentaje": 84,
                 "activo": true
             },
             "noche": {
@@ -2539,99 +2529,40 @@ const perfumes = [
         }
     },
     {
-        "id": 1771138437539,
-        "marca": "VERSACE",
-        "nombre": "ENERGY 100ml",
-        "subtitulo": "EDP",
+        "id": 1771193806657,
+        "marca": "JEAN PAUL GAULTIER",
+        "nombre": "SCANDAL ABSOLU 100ml",
+        "subtitulo": "Parfum",
         "genero": "hombre",
-        "precioOriginal": 3300,
-        "precioFinal": 1589,
-        "imagen": "assets/img/perfumes/energy.png",
+        "precioOriginal": 3625,
+        "precioFinal": 2580,
+        "imagen": "assets/img/perfumes/scandalabsolu.png",
         "notas": {
             "salida": [
-                "limón (lima ácida)",
-                "lima (limón verde)",
-                "toronja (pomelo)",
-                "naranja sanguina",
-                "bergamota de Silicia",
-                "mandarina"
+                "mirabel"
             ],
             "corazon": [
-                "pimienta rosa",
-                "ámbar blanco",
-                "grosellas negras"
+                "castaña"
             ],
             "fondo": [
-                "almizcle blanco",
-                "musgo de roble",
-                "pachulí"
+                "sándalo"
             ]
         },
         "uso": {
             "primavera": {
-                "porcentaje": 84,
-                "activo": true
-            },
-            "verano": {
-                "porcentaje": 96,
-                "activo": true
-            },
-            "otono": {
-                "porcentaje": 26,
-                "activo": false
-            },
-            "invierno": {
-                "porcentaje": 16,
-                "activo": false
-            },
-            "dia": {
-                "porcentaje": 84,
-                "activo": true
-            },
-            "noche": {
-                "porcentaje": 36,
-                "activo": false
-            }
-        }
-    },
-    {
-        "id": 1771138996168,
-        "marca": "CAROLINA HERRERA",
-        "nombre": "212 VIP BLACK 100ml",
-        "subtitulo": "EDP",
-        "genero": "hombre",
-        "precioOriginal": 2680,
-        "precioFinal": 1730,
-        "imagen": "assets/img/perfumes/212.png",
-        "notas": {
-            "salida": [
-                "absenta",
-                "anis",
-                "hinojo"
-            ],
-            "corazon": [
-                "lavanda"
-            ],
-            "fondo": [
-                "vaina de vainilla negra",
-                "almizcle"
-            ]
-        },
-        "uso": {
-            "primavera": {
-                "porcentaje": 41,
+                "porcentaje": 50,
                 "activo": false
             },
             "verano": {
-                "porcentaje": 29,
+                "porcentaje": 50,
                 "activo": false
             },
             "otono": {
-                "porcentaje": 89,
+                "porcentaje": 84,
                 "activo": true
             },
             "invierno": {
-                "porcentaje": 99,
+                "porcentaje": 100,
                 "activo": true
             },
             "dia": {
@@ -2645,241 +2576,23 @@ const perfumes = [
         }
     },
     {
-        "id": 1771139505419,
-        "marca": "CAROLINA HERRERA",
-        "nombre": "212 VIP MEN 100ml",
-        "subtitulo": "EDT",
-        "genero": "hombre",
-        "precioOriginal": 2550,
-        "precioFinal": 1490,
-        "imagen": "assets/img/perfumes/212vip.png",
-        "notas": {
-            "salida": [
-                "maracuya",
-                "lima (limón verde)",
-                "pimienta",
-                "jengibre"
-            ],
-            "corazon": [
-                "vodka",
-                "ginebra",
-                "menta",
-                "especias"
-            ],
-            "fondo": [
-                "ámbar",
-                "cuero",
-                "notas amaderadas"
-            ]
-        },
-        "uso": {
-            "primavera": {
-                "porcentaje": 46,
-                "activo": false
-            },
-            "verano": {
-                "porcentaje": 29,
-                "activo": false
-            },
-            "otono": {
-                "porcentaje": 81,
-                "activo": true
-            },
-            "invierno": {
-                "porcentaje": 84,
-                "activo": true
-            },
-            "dia": {
-                "porcentaje": 61,
-                "activo": true
-            },
-            "noche": {
-                "porcentaje": 100,
-                "activo": true
-            }
-        }
-    },
-    {
-        "id": 1771140212551,
-        "marca": "RABANNE",
-        "nombre": "INVICTUS 100ml",
-        "subtitulo": "EDT",
-        "genero": "hombre",
-        "precioOriginal": 2790,
-        "precioFinal": 1690,
-        "imagen": "assets/img/perfumes/invictusedt.png",
-        "notas": {
-            "salida": [
-                "notas marinas",
-                "toronja (pomelo)",
-                "mandarina"
-            ],
-            "corazon": [
-                "hoja de laurel",
-                "jazmín"
-            ],
-            "fondo": [
-                "ámbar gris",
-                "madera de gaiac",
-                "musgo de roble",
-                "pachulí"
-            ]
-        },
-        "uso": {
-            "primavera": {
-                "porcentaje": 91,
-                "activo": true
-            },
-            "verano": {
-                "porcentaje": 100,
-                "activo": true
-            },
-            "otono": {
-                "porcentaje": 31,
-                "activo": false
-            },
-            "invierno": {
-                "porcentaje": 21,
-                "activo": false
-            },
-            "dia": {
-                "porcentaje": 94,
-                "activo": true
-            },
-            "noche": {
-                "porcentaje": 31,
-                "activo": false
-            }
-        }
-    },
-    {
-        "id": 1771140621693,
-        "marca": "RABANNE",
-        "nombre": "INVICTUS VICTORY ELIXIR 100ml",
+        "id": 1771194006591,
+        "marca": "JEAN PAUL GAULTIER",
+        "nombre": "SCANDAL LE PARFUM 100ml",
         "subtitulo": "EDP",
         "genero": "hombre",
-        "precioOriginal": 3350,
-        "precioFinal": 2150,
-        "imagen": "assets/img/perfumes/invictuselixir.png",
+        "precioOriginal": 3320,
+        "precioFinal": 2130,
+        "imagen": "assets/img/perfumes/scandal.png",
         "notas": {
             "salida": [
-                "lavanda",
-                "cardamomo",
-                "pimienta negra"
+                "geranio"
             ],
             "corazon": [
-                "incienso",
-                "pachulí"
-            ],
-            "fondo": [
-                "vaina de vainilla",
                 "haba tonka"
-            ]
-        },
-        "uso": {
-            "primavera": {
-                "porcentaje": 36,
-                "activo": false
-            },
-            "verano": {
-                "porcentaje": 29,
-                "activo": false
-            },
-            "otono": {
-                "porcentaje": 84,
-                "activo": true
-            },
-            "invierno": {
-                "porcentaje": 96,
-                "activo": true
-            },
-            "dia": {
-                "porcentaje": 24,
-                "activo": false
-            },
-            "noche": {
-                "porcentaje": 100,
-                "activo": true
-            }
-        }
-    },
-    {
-        "id": 1771141330977,
-        "marca": "RABANNE",
-        "nombre": "INVICTUS PARFUM 100ml",
-        "subtitulo": "Parfum",
-        "genero": "hombre",
-        "precioOriginal": 3210,
-        "precioFinal": 2260,
-        "imagen": "assets/img/perfumes/invictusparfum.png",
-        "notas": {
-            "salida": [
-                "notas marinas",
-                "lavanda",
-                "pimienta rosa"
-            ],
-            "corazon": [
-                "jabón",
-                "hoja de violeta",
-                "mirto"
             ],
             "fondo": [
-                "almizcle",
-                "cachemira",
                 "sándalo"
-            ]
-        },
-        "uso": {
-            "primavera": {
-                "porcentaje": 89,
-                "activo": true
-            },
-            "verano": {
-                "porcentaje": 89,
-                "activo": true
-            },
-            "otono": {
-                "porcentaje": 79,
-                "activo": true
-            },
-            "invierno": {
-                "porcentaje": 19,
-                "activo": false
-            },
-            "dia": {
-                "porcentaje": 99,
-                "activo": true
-            },
-            "noche": {
-                "porcentaje": 79,
-                "activo": true
-            }
-        }
-    },
-    {
-        "id": 1771186094584,
-        "marca": "DOLCE&GABBANA",
-        "nombre": "THE ONE 100ml",
-        "subtitulo": "EDP",
-        "genero": "hombre",
-        "precioOriginal": 2750,
-        "precioFinal": 1850,
-        "imagen": "assets/img/perfumes/theone.png",
-        "notas": {
-            "salida": [
-                "toronja (pomelo)",
-                "cilantro",
-                "albahaca"
-            ],
-            "corazon": [
-                "cardamomo",
-                "jengibre",
-                "flor de azahar del naranjo"
-            ],
-            "fondo": [
-                "ámbar",
-                "tabaco",
-                "cedro"
             ]
         },
         "uso": {
@@ -2888,11 +2601,59 @@ const perfumes = [
                 "activo": false
             },
             "verano": {
-                "porcentaje": 24,
+                "porcentaje": 19,
                 "activo": false
             },
             "otono": {
+                "porcentaje": 79,
+                "activo": true
+            },
+            "invierno": {
                 "porcentaje": 91,
+                "activo": true
+            },
+            "dia": {
+                "porcentaje": 34,
+                "activo": false
+            },
+            "noche": {
+                "porcentaje": 100,
+                "activo": true
+            }
+        }
+    },
+    {
+        "id": 1771194130832,
+        "marca": "JEAN PAUL GAULTIER",
+        "nombre": "SCANDAL 100ml",
+        "subtitulo": "EDT",
+        "genero": "hombre",
+        "precioOriginal": 3020,
+        "precioFinal": 1990,
+        "imagen": "assets/img/perfumes/scandaledt.png",
+        "notas": {
+            "salida": [
+                "mandarina",
+                "esclarea"
+            ],
+            "corazon": [
+                "haba tonka"
+            ],
+            "fondo": [
+                "vetiver"
+            ]
+        },
+        "uso": {
+            "primavera": {
+                "porcentaje": 39,
+                "activo": false
+            },
+            "verano": {
+                "porcentaje": 26,
+                "activo": false
+            },
+            "otono": {
+                "porcentaje": 89,
                 "activo": true
             },
             "invierno": {
@@ -2910,81 +2671,180 @@ const perfumes = [
         }
     },
     {
-        "id": 1771186654532,
-        "marca": "RABANNE",
-        "nombre": "1 MILLION ELIXIR 100ml",
-        "subtitulo": "Intense",
+        "id": 1771194350732,
+        "marca": "JEAN PAUL GAULTIER",
+        "nombre": "LE BEAU 125ml",
+        "subtitulo": "EDT",
         "genero": "hombre",
-        "precioOriginal": 3350,
-        "precioFinal": 2280,
-        "imagen": "assets/img/perfumes/1elixir.png",
+        "precioOriginal": 2940,
+        "precioFinal": 1990,
+        "imagen": "assets/img/perfumes/lebeauedt.png",
         "notas": {
             "salida": [
-                "manzana",
-                "davana"
+                "bergamota"
             ],
             "corazon": [
-                "rosa de Damasco",
-                "cedro",
-                "osmanto"
+                "coco"
             ],
             "fondo": [
-                "absoluto de vainilla",
-                "haba tonka",
-                "pachulí"
+                "haba tonka"
             ]
         },
         "uso": {
             "primavera": {
-                "porcentaje": 36,
+                "porcentaje": 81,
                 "activo": false
             },
             "verano": {
-                "porcentaje": 24,
-                "activo": false
+                "porcentaje": 94,
+                "activo": true
             },
             "otono": {
+                "porcentaje": 31,
+                "activo": false
+            },
+            "invierno": {
+                "porcentaje": 21,
+                "activo": false
+            },
+            "dia": {
+                "porcentaje": 86,
+                "activo": true
+            },
+            "noche": {
+                "porcentaje": 34,
+                "activo": false
+            }
+        }
+    },
+    {
+        "id": 1771194505062,
+        "marca": "JEAN PAUL GAULTIER",
+        "nombre": "LE BEAU LE PARFUM 125ml",
+        "subtitulo": "EDP",
+        "genero": "hombre",
+        "precioOriginal": 3380,
+        "precioFinal": 2480,
+        "imagen": "assets/img/perfumes/lebeau.png",
+        "notas": {
+            "salida": [
+                "piña",
+                "iris",
+                "jengibre",
+                "cipres"
+            ],
+            "corazon": [
+                "coco",
+                "notas amaderadas"
+            ],
+            "fondo": [
+                "haba tonka",
+                "sándalo",
+                "ámbar",
+                "ámbar gris"
+            ]
+        },
+        "uso": {
+            "primavera": {
                 "porcentaje": 84,
                 "activo": true
             },
-            "invierno": {
-                "porcentaje": 100,
+            "verano": {
+                "porcentaje": 94,
                 "activo": true
             },
-            "dia": {
+            "otono": {
                 "porcentaje": 50,
+                "activo": true
+            },
+            "invierno": {
+                "porcentaje": 34,
                 "activo": false
             },
+            "dia": {
+                "porcentaje": 94,
+                "activo": true
+            },
             "noche": {
-                "porcentaje": 91,
+                "porcentaje": 89,
                 "activo": true
             }
         }
     },
     {
-        "id": 1771186834207,
-        "marca": "RABANNE",
-        "nombre": "1 MILLION ROYAL 100ml",
-        "subtitulo": "Parfum",
+        "id": 1771194677062,
+        "marca": "JEAN PAUL GAULTIER",
+        "nombre": "LE BEAU PARADISE GARDEN 125ml",
+        "subtitulo": "EDP",
         "genero": "hombre",
-        "precioOriginal": 3210,
-        "precioFinal": 2190,
-        "imagen": "assets/img/perfumes/1royal.png",
+        "precioOriginal": 3295,
+        "precioFinal": 2290,
+        "imagen": "assets/img/perfumes/paradise.png",
         "notas": {
             "salida": [
-                "cardamomo",
-                "tangerina",
-                "bergamota"
+                "notas verdes",
+                "notas acuaticas",
+                "menta",
+                "jengibre"
+            ],
+            "corazon": [
+                "coco",
+                "higo",
+                "sal"
+            ],
+            "fondo": [
+                "haba tonka",
+                "sándalo"
+            ]
+        },
+        "uso": {
+            "primavera": {
+                "porcentaje": 81,
+                "activo": true
+            },
+            "verano": {
+                "porcentaje": 94,
+                "activo": true
+            },
+            "otono": {
+                "porcentaje": 34,
+                "activo": false
+            },
+            "invierno": {
+                "porcentaje": 24,
+                "activo": false
+            },
+            "dia": {
+                "porcentaje": 86,
+                "activo": true
+            },
+            "noche": {
+                "porcentaje": 41,
+                "activo": true
+            }
+        }
+    },
+    {
+        "id": 1771194916841,
+        "marca": "JEAN PAUL GAULTIER",
+        "nombre": "LE MALE LE PARFUM 125ml",
+        "subtitulo": "EDP",
+        "genero": "hombre",
+        "precioOriginal": 3190,
+        "precioFinal": 2390,
+        "imagen": "assets/img/perfumes/lemale.png",
+        "notas": {
+            "salida": [
+                "cardamomo"
             ],
             "corazon": [
                 "lavanda",
-                "salvia",
-                "hoja de violeta"
+                "iris"
             ],
             "fondo": [
-                "benjuí",
-                "cedro",
-                "pachulí"
+                "vainilla",
+                "notas orientales",
+                "notas amaderadas"
             ]
         },
         "uso": {
@@ -2997,7 +2857,58 @@ const perfumes = [
                 "activo": false
             },
             "otono": {
-                "porcentaje": 100,
+                "porcentaje": 84,
+                "activo": true
+            },
+            "invierno": {
+                "porcentaje": 94,
+                "activo": true
+            },
+            "dia": {
+                "porcentaje": 36,
+                "activo": false
+            },
+            "noche": {
+                "porcentaje": 91,
+                "activo": true
+            }
+        }
+    },
+    {
+        "id": 1771195078697,
+        "marca": "JEAN PAUL GAULTIER",
+        "nombre": "LE MALE ELIXIR 125ml",
+        "subtitulo": "Parfum",
+        "genero": "hombre",
+        "precioOriginal": 3420,
+        "precioFinal": 2360,
+        "imagen": "assets/img/perfumes/elixir.png",
+        "notas": {
+            "salida": [
+                "lavanda",
+                "menta"
+            ],
+            "corazon": [
+                "vainilla",
+                "benjuí"
+            ],
+            "fondo": [
+                "haba tonka",
+                "tabaco",
+                "miel"
+            ]
+        },
+        "uso": {
+            "primavera": {
+                "porcentaje": 34,
+                "activo": false
+            },
+            "verano": {
+                "porcentaje": 21,
+                "activo": false
+            },
+            "otono": {
+                "porcentaje": 84,
                 "activo": true
             },
             "invierno": {
@@ -3005,11 +2916,365 @@ const perfumes = [
                 "activo": true
             },
             "dia": {
-                "porcentaje": 41,
+                "porcentaje": 26,
                 "activo": false
             },
             "noche": {
                 "porcentaje": 100,
+                "activo": true
+            }
+        }
+    },
+    {
+        "id": 1771195472400,
+        "marca": "CAROLINA HERRERA",
+        "nombre": "BAD BOY LE PARFUM 100ml",
+        "subtitulo": "EDP",
+        "genero": "hombre",
+        "precioOriginal": 3170,
+        "precioFinal": 2290,
+        "imagen": "assets/img/perfumes/badparfum.png",
+        "notas": {
+            "salida": [
+                "cannabis",
+                "toronja (pomelo)"
+            ],
+            "corazon": [
+                "pimienta negra",
+                "geranio"
+            ],
+            "fondo": [
+                "cuero",
+                "vetiver"
+            ]
+        },
+        "uso": {
+            "primavera": {
+                "porcentaje": 64,
+                "activo": true
+            },
+            "verano": {
+                "porcentaje": 31,
+                "activo": false
+            },
+            "otono": {
+                "porcentaje": 89,
+                "activo": true
+            },
+            "invierno": {
+                "porcentaje": 99,
+                "activo": true
+            },
+            "dia": {
+                "porcentaje": 49,
+                "activo": false
+            },
+            "noche": {
+                "porcentaje": 99,
+                "activo": true
+            }
+        }
+    },
+    {
+        "id": 1771196200869,
+        "marca": "VALENTINO",
+        "nombre": "INTENSE 100ml",
+        "subtitulo": "EDP",
+        "genero": "hombre",
+        "precioOriginal": 3850,
+        "precioFinal": 2850,
+        "imagen": "assets/img/perfumes/valentino.png",
+        "notas": {
+            "salida": [
+                "vainilla"
+            ],
+            "corazon": [
+                "lavanda"
+            ],
+            "fondo": [
+                "vetiver"
+            ]
+        },
+        "uso": {
+            "primavera": {
+                "porcentaje": 81,
+                "activo": true
+            },
+            "verano": {
+                "porcentaje": 29,
+                "activo": false
+            },
+            "otono": {
+                "porcentaje": 96,
+                "activo": true
+            },
+            "invierno": {
+                "porcentaje": 99,
+                "activo": true
+            },
+            "dia": {
+                "porcentaje": 61,
+                "activo": true
+            },
+            "noche": {
+                "porcentaje": 50,
+                "activo": true
+            }
+        }
+    },
+    {
+        "id": 1771196489260,
+        "marca": "VALENTINO",
+        "nombre": "CORAL FANTASY 100ml",
+        "subtitulo": "EDT",
+        "genero": "hombre",
+        "precioOriginal": 3150,
+        "precioFinal": 2550,
+        "imagen": "assets/img/perfumes/coralhombre.png",
+        "notas": {
+            "salida": [
+                "manzana roja",
+                "cardamomo",
+                "bergamota de Calabria"
+            ],
+            "corazon": [
+                "lavanda",
+                "geranio",
+                "esclarea"
+            ],
+            "fondo": [
+                "tabaco",
+                "pachulí",
+                "vetiver"
+            ]
+        },
+        "uso": {
+            "primavera": {
+                "porcentaje": 96,
+                "activo": true
+            },
+            "verano": {
+                "porcentaje": 81,
+                "activo": true
+            },
+            "otono": {
+                "porcentaje": 94,
+                "activo": true
+            },
+            "invierno": {
+                "porcentaje": 100,
+                "activo": true
+            },
+            "dia": {
+                "porcentaje": 99,
+                "activo": true
+            },
+            "noche": {
+                "porcentaje": 94,
+                "activo": true
+            }
+        }
+    },
+    {
+        "id": 1771196645332,
+        "marca": "VALENTINO",
+        "nombre": "EXTRADOSE 100ml",
+        "subtitulo": "Parfum",
+        "genero": "hombre",
+        "precioOriginal": 4200,
+        "precioFinal": 2950,
+        "imagen": "assets/img/perfumes/extradose.png",
+        "notas": {
+            "salida": [
+                "notas especiadas"
+            ],
+            "corazon": [
+                "lavanda silvestre"
+            ],
+            "fondo": [
+                "notas amaderadas"
+            ]
+        },
+        "uso": {
+            "primavera": {
+                "porcentaje": 71,
+                "activo": true
+            },
+            "verano": {
+                "porcentaje": 29,
+                "activo": false
+            },
+            "otono": {
+                "porcentaje": 94,
+                "activo": true
+            },
+            "invierno": {
+                "porcentaje": 100,
+                "activo": true
+            },
+            "dia": {
+                "porcentaje": 66,
+                "activo": false
+            },
+            "noche": {
+                "porcentaje": 100,
+                "activo": true
+            }
+        }
+    },
+    {
+        "id": 1771197318688,
+        "marca": "GIORGIO ARMANI",
+        "nombre": "STRONGER WITH YOU INTENSILY 100ml",
+        "subtitulo": "EDP",
+        "genero": "hombre",
+        "precioOriginal": 3550,
+        "precioFinal": 2990,
+        "imagen": "assets/img/perfumes/sint.png",
+        "notas": {
+            "salida": [
+                "pimienta negra",
+                "enebro",
+                "violeta"
+            ],
+            "corazon": [
+                "tofé",
+                "canela",
+                "lavanda",
+                "salvia"
+            ],
+            "fondo": [
+                "vainilla",
+                "ámbar",
+                "haba tonka",
+                "gamuza"
+            ]
+        },
+        "uso": {
+            "primavera": {
+                "porcentaje": 29,
+                "activo": false
+            },
+            "verano": {
+                "porcentaje": 21,
+                "activo": false
+            },
+            "otono": {
+                "porcentaje": 81,
+                "activo": true
+            },
+            "invierno": {
+                "porcentaje": 100,
+                "activo": true
+            },
+            "dia": {
+                "porcentaje": 31,
+                "activo": false
+            },
+            "noche": {
+                "porcentaje": 100,
+                "activo": true
+            }
+        }
+    },
+    {
+        "id": 1771197475470,
+        "marca": "GIORGIO ARMANI",
+        "nombre": "STRONGER WITH YOU 100ml",
+        "subtitulo": "EDT",
+        "genero": "hombre",
+        "precioOriginal": 2790,
+        "precioFinal": 1990,
+        "imagen": "assets/img/perfumes/sedt.png",
+        "notas": {
+            "salida": [
+                "castaña",
+                "azucar"
+            ],
+            "corazon": [
+                "salvia",
+                "lavanda"
+            ],
+            "fondo": [
+                "vainilla",
+                "humo"
+            ]
+        },
+        "uso": {
+            "primavera": {
+                "porcentaje": 34,
+                "activo": false
+            },
+            "verano": {
+                "porcentaje": 21,
+                "activo": false
+            },
+            "otono": {
+                "porcentaje": 86,
+                "activo": true
+            },
+            "invierno": {
+                "porcentaje": 100,
+                "activo": true
+            },
+            "dia": {
+                "porcentaje": 39,
+                "activo": false
+            },
+            "noche": {
+                "porcentaje": 100,
+                "activo": true
+            }
+        }
+    },
+    {
+        "id": 1771197748257,
+        "marca": "GIORGIO ARMANI",
+        "nombre": "STRONGER WITH YOU PARFUM100ml",
+        "subtitulo": "Parfum",
+        "genero": "hombre",
+        "precioOriginal": 3090,
+        "precioFinal": 2190,
+        "imagen": "assets/img/perfumes/sparfum.png",
+        "notas": {
+            "salida": [
+                "pimienta rosa",
+                "mandarina"
+            ],
+            "corazon": [
+                "lavanda",
+                "salvia",
+                "canela"
+            ],
+            "fondo": [
+                "castaña",
+                "vainilla",
+                "cuero"
+            ]
+        },
+        "uso": {
+            "primavera": {
+                "porcentaje": 21,
+                "activo": false
+            },
+            "verano": {
+                "porcentaje": 14,
+                "activo": false
+            },
+            "otono": {
+                "porcentaje": 89,
+                "activo": true
+            },
+            "invierno": {
+                "porcentaje": 100,
+                "activo": true
+            },
+            "dia": {
+                "porcentaje": 21,
+                "activo": false
+            },
+            "noche": {
+                "porcentaje": 94,
                 "activo": true
             }
         }
