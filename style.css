@@ -21,21 +21,97 @@ body {
 }
 
 .logo h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 28px;
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
+.nav-link-special {
+    padding: 8px 16px;
+    border-radius: 20px;
+    background: #F3E8FF;
+    color: #6D28D9;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.nav-link-special:hover {
+    background: #8B5CF6;
+    color: white;
+}
+
+#mostrarMasBtn {
+    display: block;
+    margin: 40px auto;
+    padding: 12px 30px;
+    border-radius: 30px;
+    background: #111827;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#mostrarMasBtn:hover {
+    background: #374151;
+}
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: #C6A75E;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+    box-shadow: 0 10px 25px rgba(198,167,94,0.35);
+    z-index: 999;
+}
+
+#scrollTopBtn.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+#scrollTopBtn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 15px 35px rgba(198,167,94,0.45);
+}
+.logo-link {
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Inter',sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.logo-link:hover {
+    opacity: 0.8;
+}
+
 
 /* ===== FILTROS ===== */
 .filters {
     display: flex;
     justify-content: center;
     gap: 30px;
+    margin-top: 10px;
 }
 
 .filter-btn {
+    text-decoration: none;
     background: none;
     border: none;
     font-size: 15px;
@@ -56,6 +132,7 @@ body {
     background-color: #C6A75E;
     transition: width 0.3s ease;
 }
+
 
 .filter-btn:hover::after,
 .filter-btn.active::after {
@@ -138,7 +215,7 @@ body {
 }
 
 .perfume-name {
-    font-family: 'Inter',san serif;
+    font-family: 'Inter',sans-serif;
     font-size: 12px;
     margin-bottom: 0px;
     letter-spacing: 1.2px;
@@ -162,6 +239,31 @@ body {
     color: #999;
     font-size: 14px;
 }
+.no-disponible-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #DC2626;
+    color: white;
+    font-size: 11px;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.perfume-card.no-stock {
+    opacity: 0.6;
+}
+.detail-no-stock {
+    background: #FEF2F2;
+    color: #B91C1C;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
 
 /* ===== RESPONSIVE ===== */
 
@@ -285,7 +387,7 @@ body {
 }
 
 .detail-info h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Inter', sans-serif;
     font-size: 28px;
     margin-bottom: 20px;
 }
@@ -1053,4 +1155,79 @@ body {
 .uso-range {
     width: 100%;
     margin-top: 8px;
+}
+
+.info-section {
+    margin-top: 80px;
+    padding: 60px 20px;
+    background: #F9FAFB;
+}
+
+.info-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.info-container h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.info-card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-4px);
+}
+
+.info-card h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    font-size: 14px;
+    color: #4B5563;
+    line-height: 1.6;
+}
+
+.info-cta {
+    text-align: center;
+    margin-top: 50px;
+}
+html {
+    scroll-behavior: smooth;
+}
+.info-cta a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 30px;
+    border-radius: 30px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.info-cta a:hover {
+    transform: scale(1.05);
+}
+@media (max-width: 768px) {
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
 }

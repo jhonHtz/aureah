@@ -520,7 +520,7 @@ const perfumes = [
         "subtitulo": "Intense",
         "genero": "mujer",
         "precioOriginal": 3735,
-        "precioFinal": 2480,
+        "precioFinal": 2430,
         "imagen": "assets/img/perfumes/fameintense.png",
         "notas": {
             "salida": [
@@ -626,7 +626,7 @@ const perfumes = [
         "subtitulo": "Parfum",
         "genero": "mujer",
         "precioOriginal": 3805,
-        "precioFinal": 2625,
+        "precioFinal": 2580,
         "imagen": "assets/img/perfumes/fame.png",
         "notas": {
             "salida": [
@@ -680,7 +680,7 @@ const perfumes = [
         "subtitulo": "EDP",
         "genero": "mujer",
         "precioOriginal": 3800,
-        "precioFinal": 2630,
+        "precioFinal": 2530,
         "imagen": "assets/img/perfumes/yslblack.png",
         "notas": {
             "salida": [
@@ -735,7 +735,7 @@ const perfumes = [
         "subtitulo": "EDP",
         "genero": "mujer",
         "precioOriginal": 3830,
-        "precioFinal": 2650,
+        "precioFinal": 2550,
         "imagen": "assets/img/perfumes/libreedp.png",
         "notas": {
             "salida": [
@@ -790,7 +790,7 @@ const perfumes = [
         "subtitulo": "EDP",
         "genero": "mujer",
         "precioOriginal": 3800,
-        "precioFinal": 2680,
+        "precioFinal": 2480,
         "imagen": "assets/img/perfumes/yslgris.png",
         "notas": {
             "salida": [
@@ -1007,7 +1007,7 @@ const perfumes = [
         "subtitulo": "EDP",
         "genero": "mujer",
         "precioOriginal": 3840,
-        "precioFinal": 2780,
+        "precioFinal": 2580,
         "imagen": "assets/img/perfumes/mujercoral.png",
         "notas": {
             "salida": [
@@ -1058,7 +1058,7 @@ const perfumes = [
         "subtitulo": "EDP",
         "genero": "mujer",
         "precioOriginal": 3915,
-        "precioFinal": 2830,
+        "precioFinal": 2730,
         "imagen": "assets/img/perfumes/bellep.png",
         "notas": {
             "salida": [
@@ -1105,7 +1105,7 @@ const perfumes = [
         "subtitulo": "EDP",
         "genero": "mujer",
         "precioOriginal": 3940,
-        "precioFinal": 2740,
+        "precioFinal": 2540,
         "imagen": "assets/img/perfumes/mon.png",
         "notas": {
             "salida": [
@@ -1163,7 +1163,7 @@ const perfumes = [
         "subtitulo": "EDP",
         "genero": "mujer",
         "precioOriginal": 3800,
-        "precioFinal": 2880,
+        "precioFinal": 2780,
         "imagen": "assets/img/perfumes/mwylang.png",
         "notas": {
             "salida": [
@@ -1838,7 +1838,7 @@ const perfumes = [
             }
         }
     },
-        {
+    {
         "id": 1771136290356,
         "marca": "VERSACE",
         "nombre": "EROS 100ml",
@@ -2426,14 +2426,14 @@ const perfumes = [
             }
         }
     },
-        {
+    {
         "id": 1771192217325,
         "marca": "CAROLINA HERRERA",
         "nombre": "BAD BOY COBALT 100ml",
         "subtitulo": "EDP",
         "genero": "hombre",
         "precioOriginal": 3025,
-        "precioFinal": 2170,
+        "precioFinal": 1970,
         "imagen": "assets/img/perfumes/bad.png",
         "notas": {
             "salida": [
@@ -3082,7 +3082,7 @@ const perfumes = [
         "subtitulo": "Parfum",
         "genero": "hombre",
         "precioOriginal": 4200,
-        "precioFinal": 2950,
+        "precioFinal": 2890,
         "imagen": "assets/img/perfumes/extradose.png",
         "notas": {
             "salida": [
@@ -3129,7 +3129,7 @@ const perfumes = [
         "subtitulo": "EDP",
         "genero": "hombre",
         "precioOriginal": 3550,
-        "precioFinal": 2990,
+        "precioFinal": 2490,
         "imagen": "assets/img/perfumes/sint.png",
         "notas": {
             "salida": [
@@ -3279,7 +3279,7 @@ const perfumes = [
             }
         }
     },
-        {
+    {
         "id": 1771261446519,
         "marca": "GIORGIO ARMANI",
         "nombre": "PROFONDO 100ml",

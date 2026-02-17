@@ -15,13 +15,14 @@
     <!-- NAVBAR -->
     <header class="navbar">
         <div class="logo">
-            <h1>PERFUMES</h1>
+            <a href="index.html" class="logo-link">PERFUMES</a>
         </div>
 
         <nav class="filters">
             <button class="filter-btn active" data-filter="all">Todos</button>
             <button class="filter-btn" data-filter="mujer">Mujer</button>
             <button class="filter-btn" data-filter="hombre">Hombre</button>
+            <a href="como-funciona.html" class="filter-btn">Cómo funciona</a>
         </nav>
     </header>
 
@@ -98,6 +99,10 @@
                     <option value="hombre">Hombre</option>
                     <option value="unisex">Unisex</option>
                 </select>
+                <select id="adminDisponible">
+                    <option value="true">Disponible</option>
+                    <option value="false">No disponible</option>
+                </select>
 
                 <input type="number" id="adminPrecioOriginal" placeholder="Precio original" required>
 
@@ -158,9 +163,23 @@
 
     <script src="data/iconsUso.js"></script>
     <script src="data/notas.js"></script>
-    <script src="data/perfumes.js"></script>
     <script src="data/imagenes.js"></script>
+    <script>
+        document.write(
+            '<script src="data/perfumes.js?v=' + Date.now() + '"><\/script>'
+        );
+    </script>
     <script src="script.js"></script>
+    <button id="scrollTopBtn" aria-label="Volver arriba">
+        <svg viewBox="0 0 24 24" width="20" height="20">
+            <path d="M12 19V5M12 5L5 12M12 5L19 12"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"/>
+        </svg>
+    </button>
+
 
 </body>
 </html>

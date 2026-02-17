@@ -7,6 +7,25 @@ function isAdminMode() {
     return params.get("admin") === "aurea117";
 }
 
+function obtenerPerfumesActuales() {
+
+    let perfumesExtra = JSON.parse(localStorage.getItem("perfumesExtra")) || [];
+
+    let mapaEditados = {};
+    perfumesExtra.forEach(p => {
+        mapaEditados[p.id] = p;
+    });
+
+    let baseActualizada = perfumes.map(p =>
+        mapaEditados[p.id] || p
+    );
+
+    let nuevos = perfumesExtra.filter(p =>
+        !perfumes.some(base => base.id === p.id)
+    );
+
+    return [...baseActualizada, ...nuevos];
+}
 
 /* =================================================
    CATALOGO PRINCIPAL
@@ -19,13 +38,16 @@ function initCatalogo() {
 
     const filterButtons = document.querySelectorAll(".filter-btn");
 
+    let mostrandoTodo = false;
+    let filtroActual = "all";
+    const LIMITE = 20;
+
     function renderPerfumes(filtro = "all") {
 
+        filtroActual = filtro; // 🔥 guardamos filtro actual
         grid.innerHTML = "";
 
-        let perfumesExtra = JSON.parse(localStorage.getItem("perfumesExtra")) || [];
-        let todosPerfumes = [...perfumes, ...perfumesExtra];
-
+        let todosPerfumes = obtenerPerfumesActuales();
         let perfumesFiltrados;
 
         if (filtro === "all") {
@@ -41,8 +63,11 @@ function initCatalogo() {
                 p.genero === "mujer" || p.genero === "unisex"
             );
         }
-         
-        perfumesFiltrados.forEach(perfume => {
+
+        // 🔥 Aplicar límite SOLO si no está mostrando todo
+        let listaFinal = mostrandoTodo ? perfumesFiltrados : perfumesFiltrados.slice(0, LIMITE);
+
+        listaFinal.forEach(perfume => {
 
             const card = document.createElement("a");
             card.href = `perfume.html?id=${perfume.id}`;
@@ -57,7 +82,6 @@ function initCatalogo() {
             }
 
             card.innerHTML = `
-                
                 ${descuento ? `<div class="discount-badge">-${descuento}%</div>` : ""}
 
                 <div class="image-container">
@@ -73,13 +97,22 @@ function initCatalogo() {
                         <div class="perfume-brand">${perfume.marca}</div>
                     </div>
 
-
                     <div class="price-container">
                         <span class="final-price">$${perfume.precioFinal.toLocaleString()}</span>
                         <span class="original-price">$${perfume.precioOriginal.toLocaleString()}</span>
                     </div>
                 </div>
+
+                ${perfume.disponible === false ? `
+                    <div class="no-disponible-badge">NO DISPONIBLE</div>
+                ` : ""}
             `;
+
+            if (perfume.disponible === false) {
+                card.classList.add("no-stock");
+            }
+
+            // 🔥 Controles admin
             if (isAdminMode()) {
                 const adminControls = document.createElement("div");
                 adminControls.classList.add("admin-card-controls");
@@ -91,23 +124,42 @@ function initCatalogo() {
 
                 card.appendChild(adminControls);
 
-                // Editar
                 adminControls.querySelector(".edit-btn").addEventListener("click", (e) => {
                     e.preventDefault();
                     openEditModal(perfume);
                 });
 
-                // Eliminar
                 adminControls.querySelector(".delete-btn").addEventListener("click", (e) => {
                     e.preventDefault();
                     deletePerfume(perfume.id);
                 });
             }
 
-
             grid.appendChild(card);
         });
+
+        // 🔥 BOTÓN MOSTRAR TODO
+        renderBotonMostrarMas(perfumesFiltrados.length);
     }
+
+function renderBotonMostrarMas(total) {
+
+    const existente = document.getElementById("mostrarMasBtn");
+    if (existente) existente.remove();
+
+    if (mostrandoTodo || total <= LIMITE) return;
+
+    const btn = document.createElement("button");
+    btn.id = "mostrarMasBtn";
+    btn.textContent = "Mostrar todos";
+
+    btn.addEventListener("click", () => {
+        mostrandoTodo = true;
+        renderPerfumes(filtroActual);
+    });
+
+    grid.parentElement.appendChild(btn);
+}
 
     /************ FUNCION EDITAR CARD DE PERFUME ************/
 
@@ -126,6 +178,9 @@ function initCatalogo() {
     
     /*CARGAR NOTAS EN EL EDITOR*/
     function openEditModal(perfume) {
+
+    document.getElementById("adminDisponible").value =
+    perfume.disponible === false ? "false" : "true";
 
     const modal = document.getElementById("adminModal");
     modal.style.display = "flex";
@@ -198,6 +253,7 @@ function initCatalogo() {
             button.classList.add("active");
 
             const filtro = button.dataset.filter;
+            mostrandoTodo = false;
             renderPerfumes(filtro);
         });
     });
@@ -205,6 +261,150 @@ function initCatalogo() {
     renderPerfumes();
 }
 
+/* =================================================
+   DETALLE PERFUME
+================================================= */
+
+function renderUsoIcon(nombre, data, label) {
+
+    return `
+        <div class="uso-item ${nombre} ${data.activo ? "activo" : ""}">
+            ${iconsUso[nombre]}
+            <span>${label}</span>
+            <div class="uso-bar">
+                <div class="uso-fill" style="width:${data.porcentaje}%"></div>
+            </div>
+        </div>
+    `;
+}
+
+function renderDetallePerfume() {
+
+    const container = document.getElementById("perfumeDetail");
+    if (!container) return;
+
+    const params = new URLSearchParams(window.location.search);
+    const id = parseInt(params.get("id"));
+
+    let todosPerfumes = obtenerPerfumesActuales();
+
+    const perfume = todosPerfumes.find(p => p.id === id);
+    if (!perfume) return;
+
+    let descuento = Math.round(
+        ((perfume.precioOriginal - perfume.precioFinal) / perfume.precioOriginal) * 100
+    );
+
+    container.innerHTML = `
+        <div class="detail-layout">
+
+            <div class="detail-left">
+                <div class="detail-image sticky-image">
+                    <img src="${perfume.imagen}" alt="${perfume.nombre}">
+                </div>
+                ${perfume.disponible === false ? `
+                    <div class="detail-no-stock">Este perfume está agotado por ahora</div>
+                ` : ""}
+                
+                <div class="detail-basic">
+                    <div class="detail-title-block">
+                        <div class="detail-main-line">
+                            <h2>${perfume.nombre}</h2>
+                            ${perfume.subtitulo ? `<span class="detail-sub">${perfume.subtitulo}</span>` : ""}
+                        </div>
+                        <div class="detail-brand">${perfume.marca}</div>
+                    </div>
+
+                    <div class="detail-prices">
+                        <span class="detail-final">$${perfume.precioFinal.toLocaleString()}</span>
+                        <span class="detail-original">$${perfume.precioOriginal.toLocaleString()}</span>
+                        <div class="detail-discount">Ahorra ${descuento}%</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detail-right">
+
+                ${["salida","corazon","fondo"].map(tipo => `
+                    <div class="detail-section">
+                        <h4>Notas de ${tipo.charAt(0).toUpperCase()+tipo.slice(1)}</h4>
+                        <div class="notes-grid">
+                            ${perfume.notas[tipo].map(nota => `
+                                <div class="note-item">
+                                    <img src="${notasDisponibles[nota]}" alt="${nota}">
+                                    <span>${nota}</span>
+                                </div>
+                            `).join("")}
+                        </div>
+                    </div>
+                `).join("")}
+
+                <div class="detail-section">
+                    <h4>¿Cuándo usarlo?</h4>
+                    <div class="uso-grid">
+                        ${renderUsoIcon("primavera", perfume.uso.primavera, "Primavera")}
+                        ${renderUsoIcon("verano", perfume.uso.verano, "Verano")}
+                        ${renderUsoIcon("otono", perfume.uso.otono, "Otoño")}
+                        ${renderUsoIcon("invierno", perfume.uso.invierno, "Invierno")}
+                        ${renderUsoIcon("dia", perfume.uso.dia, "Día")}
+                        ${renderUsoIcon("noche", perfume.uso.noche, "Noche")}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    `;
+}
+
+function initExportPerfumes() {
+
+    const btn = document.getElementById("exportPerfumesBtn");
+    if (!btn) return;
+
+    function actualizarTextoBoton() {
+        let perfumesActuales = obtenerPerfumesActuales();
+        btn.textContent = `Descargar perfumes.js (${perfumesActuales.length})`;
+    }
+
+    actualizarTextoBoton();
+
+    btn.addEventListener("click", () => {
+
+        let perfumesFinales = obtenerPerfumesActuales();
+
+        if (!perfumesFinales.length) {
+            alert("No hay perfumes para exportar.");
+            return;
+        }
+
+        const confirmar = confirm(
+            "Se descargará perfumes.js con todos los cambios.\n\n¿Deseas continuar y limpiar las ediciones locales después?"
+        );
+
+        if (!confirmar) return;
+
+        const contenido =
+`const perfumes = ${JSON.stringify(perfumesFinales, null, 4)};`;
+
+        const blob = new Blob([contenido], { type: "text/javascript" });
+        const url = URL.createObjectURL(blob);
+
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "perfumes.js";
+        a.click();
+
+        URL.revokeObjectURL(url);
+
+        // 🔥 Limpiar localStorage después de exportar
+        localStorage.removeItem("perfumesExtra");
+
+        // Recargar para volver a estado base limpio
+        setTimeout(() => {
+            location.reload();
+        }, 500);
+    });
+}
 
 /* =================================================
    MODAL ADMIN
@@ -420,6 +620,7 @@ function initAdminSubmit() {
 
         e.preventDefault();
 
+        const disponible = document.getElementById("adminDisponible").value === "true";
         const marca = document.getElementById("adminMarca").value;
         const nombre = document.getElementById("adminNombre").value;
         const subtitulo = document.getElementById("adminSubtitulo").value;
@@ -443,15 +644,26 @@ function initAdminSubmit() {
             precioFinal,
             imagen,
             notas: notasSeleccionadas,
-            uso: usoSeleccionado
+            uso: usoSeleccionado,
+            disponible
         };
 
         let perfumesGuardados = JSON.parse(localStorage.getItem("perfumesExtra")) || [];
+
         if (window.editingPerfumeId) {
-            perfumesGuardados = perfumesGuardados.map(p =>
-                p.id === window.editingPerfumeId ? nuevoPerfume : p
-            );
+
+            const index = perfumesGuardados.findIndex(p => p.id === window.editingPerfumeId);
+
+            if (index !== -1) {
+                // Ya existe en localStorage → reemplazar
+                perfumesGuardados[index] = nuevoPerfume;
+            } else {
+                // Es perfume base → agregar como edición
+                perfumesGuardados.push(nuevoPerfume);
+            }
+
             window.editingPerfumeId = null;
+
         } else {
             perfumesGuardados.push(nuevoPerfume);
         }
@@ -530,154 +742,29 @@ function initUsoAdmin() {
 }
 
 
-/* =================================================
-   DETALLE PERFUME
-================================================= */
 
-function renderUsoIcon(nombre, data, label) {
-
-    return `
-        <div class="uso-item ${nombre} ${data.activo ? "activo" : ""}">
-            ${iconsUso[nombre]}
-            <span>${label}</span>
-            <div class="uso-bar">
-                <div class="uso-fill" style="width:${data.porcentaje}%"></div>
-            </div>
-        </div>
-    `;
-}
-
-function renderDetallePerfume() {
-
-    const container = document.getElementById("perfumeDetail");
-    if (!container) return;
-
-    const params = new URLSearchParams(window.location.search);
-    const id = parseInt(params.get("id"));
-
-    let perfumesExtra = JSON.parse(localStorage.getItem("perfumesExtra")) || [];
-    let todosPerfumes = [...perfumes, ...perfumesExtra];
-
-    const perfume = todosPerfumes.find(p => p.id === id);
-    if (!perfume) return;
-
-    let descuento = Math.round(
-        ((perfume.precioOriginal - perfume.precioFinal) / perfume.precioOriginal) * 100
-    );
-
-    container.innerHTML = `
-        <div class="detail-layout">
-
-            <div class="detail-left">
-                <div class="detail-image sticky-image">
-                    <img src="${perfume.imagen}" alt="${perfume.nombre}">
-                </div>
-
-                <div class="detail-basic">
-                    <div class="detail-title-block">
-                        <div class="detail-main-line">
-                            <h2>${perfume.nombre}</h2>
-                            ${perfume.subtitulo ? `<span class="detail-sub">${perfume.subtitulo}</span>` : ""}
-                        </div>
-                        <div class="detail-brand">${perfume.marca}</div>
-                    </div>
-
-                    <div class="detail-prices">
-                        <span class="detail-final">$${perfume.precioFinal.toLocaleString()}</span>
-                        <span class="detail-original">$${perfume.precioOriginal.toLocaleString()}</span>
-                        <div class="detail-discount">Ahorra ${descuento}%</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="detail-right">
-
-                ${["salida","corazon","fondo"].map(tipo => `
-                    <div class="detail-section">
-                        <h4>Notas de ${tipo.charAt(0).toUpperCase()+tipo.slice(1)}</h4>
-                        <div class="notes-grid">
-                            ${perfume.notas[tipo].map(nota => `
-                                <div class="note-item">
-                                    <img src="${notasDisponibles[nota]}" alt="${nota}">
-                                    <span>${nota}</span>
-                                </div>
-                            `).join("")}
-                        </div>
-                    </div>
-                `).join("")}
-
-                <div class="detail-section">
-                    <h4>¿Cuándo usarlo?</h4>
-                    <div class="uso-grid">
-                        ${renderUsoIcon("primavera", perfume.uso.primavera, "Primavera")}
-                        ${renderUsoIcon("verano", perfume.uso.verano, "Verano")}
-                        ${renderUsoIcon("otono", perfume.uso.otono, "Otoño")}
-                        ${renderUsoIcon("invierno", perfume.uso.invierno, "Invierno")}
-                        ${renderUsoIcon("dia", perfume.uso.dia, "Día")}
-                        ${renderUsoIcon("noche", perfume.uso.noche, "Noche")}
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    `;
-}
-
-function initExportPerfumes() {
-
-    const btn = document.getElementById("exportPerfumesBtn");
-    if (!btn) return;
-
-    function actualizarTextoBoton() {
-        let perfumesGuardados = JSON.parse(localStorage.getItem("perfumesExtra")) || [];
-        btn.textContent = `Descargar perfumes.js (${perfumesGuardados.length})`;
-    }
-
-    actualizarTextoBoton();
-
-    btn.addEventListener("click", () => {
-
-        let perfumesGuardados = JSON.parse(localStorage.getItem("perfumesExtra")) || [];
-
-        if (!perfumesGuardados.length) {
-            alert("No hay perfumes en localStorage para exportar.");
-            return;
-        }
-
-        const contenido = `const perfumes = ${JSON.stringify(perfumesGuardados, null, 4)};`;
-
-        const blob = new Blob([contenido], { type: "text/javascript" });
-        const url = URL.createObjectURL(blob);
-
-        const a = document.createElement("a");
-        a.href = url;
-        a.download = "perfumes.js";
-        a.click();
-
-        URL.revokeObjectURL(url);
-    });
-}
 /* =================================================
    ANIMACION SCROLL
 ================================================= */
-function initImageScrollEffect() {
 
-    const imageContainer = document.querySelector(".sticky-image");
-    if (!imageContainer) return;
+function initScrollTopButton() {
+
+    const btn = document.getElementById("scrollTopBtn");
+    if (!btn) return;
 
     window.addEventListener("scroll", () => {
-
-        const scrollY = window.scrollY;
-        const scale = Math.max(0.8, 1 - scrollY / 1200);
-
-        imageContainer.style.transform = `scale(${scale})`;
-
-        if (scrollY > 100) {
-            imageContainer.style.boxShadow = "0 20px 40px rgba(0,0,0,0.15)";
+        if (window.scrollY > 600) {
+            btn.classList.add("show");
         } else {
-            imageContainer.style.boxShadow = "none";
+            btn.classList.remove("show");
         }
+    });
 
+    btn.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
     });
 }
 
@@ -690,7 +777,6 @@ document.addEventListener("DOMContentLoaded", () => {
     initCatalogo();
     initAdminModal();
     initDiscountCalculation();
-    initImageScrollEffect();
     initImageSelectorModal();
     loadImageGrid();
     initTagsSystem();
@@ -698,5 +784,5 @@ document.addEventListener("DOMContentLoaded", () => {
     initExportPerfumes();
     initAdminSubmit();
     renderDetallePerfume();
-
+    initScrollTopButton();
 });
