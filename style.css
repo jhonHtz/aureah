@@ -18,6 +18,9 @@ body {
     padding: 25px 0;
     text-align: center;
     border-bottom: 1px solid #E8E2D9;
+    position: sticky;
+    top: 0;
+    z-index: 11100;
 }
 
 .logo h1 {
@@ -64,7 +67,7 @@ body {
     width: 52px;
     height: 52px;
     border-radius: 50%;
-    background: #C6A75E;
+    background: #b130c2c5;
     color: white;
     border: none;
     display: flex;
@@ -75,7 +78,7 @@ body {
     visibility: hidden;
     transform: translateY(20px);
     transition: all 0.4s ease;
-    box-shadow: 0 10px 25px rgba(198,167,94,0.35);
+    box-shadow: 0 5px 25px #b130c2c5;
     z-index: 999;
 }
 
@@ -99,6 +102,118 @@ body {
 
 .logo-link:hover {
     opacity: 0.8;
+}
+/* ===== TOOLTIP MINI SOBRE CARD ===== */
+
+.welcome-tooltip-mini {
+    position: absolute;
+    z-index: 2200;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+.welcome-tooltip-mini.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.tooltip-bubble {
+    background: white;
+    padding: 10px 14px;
+    border-radius: 12px;
+    font-size: 12px;
+    color: #374151;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    position: relative;
+    max-width: 220px;
+}
+
+/* Flecha */
+.tooltip-bubble::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 20px;
+    width: 14px;
+    height: 14px;
+    background: white;
+    transform: rotate(45deg);
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.05);
+}
+
+.tooltip-bubble button {
+    position: absolute;
+    top: 4px;
+    right: 6px;
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    color: #6B7280;
+}
+
+.welcome-tooltip {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+
+.welcome-tooltip.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.tooltip-content {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+}
+
+.tooltip-content p {
+    font-size: 14px;
+    color: #374151;
+    margin-bottom: 20px;
+}
+
+.tooltip-content button {
+    padding: 10px 25px;
+    border-radius: 25px;
+    background: #b130c2c5;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.tooltip-content button:hover {
+    transform: scale(1.05);
+}
+/* ===== RESALTAR PRIMER PERFUME ===== */
+
+.perfume-card.highlight {
+    position: relative;
+    z-index: 2100;
+    transform: scale(1.03);
+    box-shadow: 0 20px 50px rgba(168, 94, 198, 0.45);
+    transition: 0.8s ease;
+    animation: pulseHighlight 2.2s infinite;
+}
+
+@keyframes pulseHighlight {
+    0% { box-shadow: 0 0 0 0 rgba(160, 94, 198, 0.5); }
+    70% { box-shadow: 0 0 0 11px rgba(177, 94, 198, 0.205); }
+    100% { box-shadow: 0 0 0 0 rgba(189, 94, 198, 0.178); }
 }
 
 
@@ -174,17 +289,31 @@ body {
 .perfume-card {
     position: relative;
 }
+.view-more {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #6B7280;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: 0.3s ease;
+}
+
+.perfume-card:hover .view-more {
+    color: #C6A75E;
+    transform: translateX(4px);
+}
+
 /* ===== ETIQUETA DESCUENTO ===== */
 
 .discount-badge {
     position: absolute;
-    top: 15px;
+    top: 25px;
     right: 15px;
-    background-color: #C6A75E;
+    background-color: #b130c2c5;
     color: white;
     font-size: 12px;
     font-weight: 500;
-    padding: 6px 10px;
+    padding: 4px 7px;
     border-radius: 20px;
     letter-spacing: 0.5px;
 }
@@ -846,6 +975,7 @@ body {
 .admin-modal-content {
     background: #ffffff;
     padding: 50px 60px;
+    z-index: 1000;
     width: 900px;
     max-width: 95%;
     max-height: 92vh;
@@ -943,14 +1073,22 @@ body {
     font-size: 12px;
     font-weight: 600;
 }
+.intro-explore {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #4B5563;
+}
 
 .perfume-sub {
-    font-size: 11px;
-    padding: 3px 6px;
-    border-radius: 6px;
+    top: 15px;
+    left: 15px;
+    font-size: 12px;
+    border-radius: 20px;
     background: #EDE9FE;
     color: #6D28D9;
     font-weight: 500;
+    padding: 6px 10px;
 }
 
 .perfume-brand {

@@ -25,9 +25,17 @@
             <a href="como-funciona.html" class="filter-btn">Cómo funciona</a>
         </nav>
     </header>
+    
 
     <!-- CONTENIDO PRINCIPAL -->
     <main class="container">
+        
+        <div class="intro-explore">
+            <p>
+                Explora el catálogo. Toca cualquier perfume para ver notas,
+                temporadas y más información.
+            </p>
+        </div>
 
         <section class="perfume-grid" id="perfumeGrid">
 
@@ -169,7 +177,7 @@
             '<script src="data/perfumes.js?v=' + Date.now() + '"><\/script>'
         );
     </script>
-    <script src="script.js"></script>
+
     <button id="scrollTopBtn" aria-label="Volver arriba">
         <svg viewBox="0 0 24 24" width="20" height="20">
             <path d="M12 19V5M12 5L5 12M12 5L19 12"
@@ -179,6 +187,18 @@
                 stroke-linejoin="round"/>
         </svg>
     </button>
+
+    <script src="js/core.js"></script>
+    <script src="js/catalogo.js"></script>
+    <script src="js/admin.js"></script>
+    <script src="script.js"></script>
+
+    <div id="welcomeTooltip" class="welcome-tooltip-mini">
+        <div class="tooltip-bubble">
+            👋 Toca el perfume para ver detalles
+            <button id="closeTooltip">×</button>
+        </div>
+    </div>
 
 
 </body>

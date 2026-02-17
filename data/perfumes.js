@@ -163,7 +163,7 @@ const perfumes = [
         "id": 1771038579282,
         "marca": "VERSACE",
         "nombre": "BRIGHT CRYSTAL 90ml",
-        "subtitulo": "EDP",
+        "subtitulo": "EDT",
         "genero": "mujer",
         "precioOriginal": 3050,
         "precioFinal": 1380,
@@ -313,7 +313,8 @@ const perfumes = [
                 "porcentaje": 66,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771041242007,
@@ -1326,7 +1327,7 @@ const perfumes = [
         "subtitulo": "EDP",
         "genero": "hombre",
         "precioOriginal": 2920,
-        "precioFinal": 1480,
+        "precioFinal": 1380,
         "imagen": "assets/img/perfumes/mexplor.png",
         "notas": {
             "salida": [
@@ -1370,7 +1371,8 @@ const perfumes = [
                 "porcentaje": 84,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771100469702,
@@ -3634,7 +3636,8 @@ const perfumes = [
                 "porcentaje": 91,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771267259810,
