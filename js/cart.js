@@ -121,6 +121,7 @@ function renderCarrito() {
         </div>
 
         <div class="carrito-actions">
+        
             
 
             <button id="whatsappPedido" class="btn-whatsapp">
@@ -128,12 +129,56 @@ function renderCarrito() {
             </button>
         </div>
     `;
+    html += `
+        <div class="cart-message-preview">
+            <div class="cart-preview-title">
+                El mensaje que se enviará será:
+            </div>
+            <div id="previewMessage" class="cart-preview-box">
+            </div>
+        </div>
+    `;
 
     container.innerHTML = html;
 
     initCartControls();
     actualizarTotalDinamico();
+    actualizarPreviewMensaje();
 
+
+}
+function actualizarPreviewMensaje() {
+
+    const preview = document.getElementById("previewMessage");
+    if (!preview) return;
+
+    let carrito = obtenerCarrito();
+    let perfumesActuales = obtenerPerfumesActuales();
+
+    let activos = carrito.filter(item => item.activo !== false);
+
+    if (activos.length === 0) {
+        preview.textContent = "Selecciona productos para generar el mensaje.";
+        return;
+    }
+
+    let mensaje = "Hola, quisiera información sobre el siguiente pedido:\n\n";
+    let total = 0;
+
+    activos.forEach(item => {
+
+        let perfume = perfumesActuales.find(p => p.id === item.id);
+        if (!perfume) return;
+
+        let subtotal = perfume.precioFinal * item.cantidad;
+        total += subtotal;
+
+        mensaje += `• ${perfume.nombre} (${item.cantidad}x) - $${subtotal.toLocaleString()}\n`;
+    });
+
+    mensaje += `\nTotal: $${total.toLocaleString()}`;
+
+    preview.textContent = mensaje;
 }
 
 
@@ -268,7 +313,7 @@ function actualizarTotalDinamico() {
     let perfumesActuales = obtenerPerfumesActuales();
 
     let nuevoTotal = 0;
-
+    
     checks.forEach(check => {
 
         const id = parseInt(check.dataset.id);
@@ -289,7 +334,7 @@ function actualizarTotalDinamico() {
 
         }
     });
-
+    actualizarPreviewMensaje();
     totalEl.textContent = "Total: $" + nuevoTotal.toLocaleString();
 }
 
