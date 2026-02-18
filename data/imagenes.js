@@ -23,11 +23,13 @@ const imagenesDisponibles = [
     
     //  YSL
     "libreedp.png",
+    "libreedt.png",
     "yslblack.png",
     "yslgris.png",
     "mon.png",
     "ysl.png",
     "myslf.png",
+
     
     //  DOLCE & GABANNA
     "lightblue.png",
@@ -83,6 +85,7 @@ const imagenesDisponibles = [
 
     //  GIORGIO ARMANI
     "mwylang.png",
+    "myway.png",
     "sedt.png",
     "sint.png",
     "sparfum.png",
@@ -108,4 +111,9 @@ const imagenesDisponibles = [
     "halloween.png",
     "aqua.png",
     "art.png",
+    "mega.png",
+    "man.png",
+    "9pm.png",
+    "9pmr.png",
+    "9am.png",
 ];

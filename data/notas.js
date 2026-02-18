@@ -86,6 +86,9 @@ const notasDisponibles = {
     "osmanto": "assets/img/notes/florales/osmanto.jpg",
     "violeta": "assets/img/notes/florales/violeta.jpg",
     "mimosa": "assets/img/notes/florales/mimosa.jpg",
+    "lirio de los valles": "assets/img/notes/florales/lirio.jpg",
+    "nardo de la india": "assets/img/notes/florales/nardo.jpg",
+    "iris pallida": "assets/img/notes/florales/iris palida.jpg",
     "": "assets/img/notes/florales/.jpg",
     "": "assets/img/notes/florales/.jpg",
     
@@ -269,7 +272,7 @@ const notasDisponibles = {
     "vodka": "assets/img/notes/bebida/vodka.jpg",
     "ginebra": "assets/img/notes/bebida/ginebra.jpg",
     "té de jazmín": "assets/img/notes/bebida/te.jpg",
-    "": "assets/img/notes/bebida/.jpg",
+    "wisky": "assets/img/notes/bebida/wisky.jpg",
     "": "assets/img/notes/bebida/.jpg",
     "": "assets/img/notes/bebida/.jpg",
     "": "assets/img/notes/bebida/.jpg",
@@ -296,7 +299,7 @@ const notasDisponibles = {
     "cannabis": "assets/img/notes/herbales/marihuana.jpg",
     "enebro": "assets/img/notes/herbales/enebro.jpg",
     "romero": "assets/img/notes/herbales/romero.jpg",
-    "": "assets/img/notes/herbales/.jpg",
+    "abrótano": "assets/img/notes/herbales/artemisa.jpg",
     "": "assets/img/notes/herbales/.jpg",
     "": "assets/img/notes/herbales/.jpg",
 

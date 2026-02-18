@@ -256,6 +256,12 @@
     background: var(--color-primary);
     color: white;
 }
+
+.selected-image-preview img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
 /* ===== USO ADMIN ===== */
 
 .uso-admin-item {
