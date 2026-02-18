@@ -3296,7 +3296,7 @@ const perfumes = [
     {
         "id": 1771261446519,
         "marca": "GIORGIO ARMANI",
-        "nombre": "PROFONDO 100ml",
+        "nombre": "PROFONDO EDP 100ml",
         "subtitulo": "EDP",
         "genero": "hombre",
         "precioOriginal": 3600,
@@ -3349,7 +3349,7 @@ const perfumes = [
     {
         "id": 1771261621880,
         "marca": "GIORGIO ARMANI",
-        "nombre": "PROFONDO 100ml",
+        "nombre": "PROFONDO PARFUM 100ml",
         "subtitulo": "Parfum",
         "genero": "hombre",
         "precioOriginal": 4050,
@@ -3654,7 +3654,7 @@ const perfumes = [
     {
         "id": 1771267259810,
         "marca": "DIOR",
-        "nombre": "SAUVAGE 100ml",
+        "nombre": "SAUVAGE EDP 100ml",
         "subtitulo": "EDP",
         "genero": "hombre",
         "precioOriginal": 3650,
@@ -3705,7 +3705,7 @@ const perfumes = [
     {
         "id": 1771267411809,
         "marca": "DIOR",
-        "nombre": "SAUVAGE 100ml",
+        "nombre": "SAUVAGE PARFUM 100ml",
         "subtitulo": "Parfum",
         "genero": "hombre",
         "precioOriginal": 4380,

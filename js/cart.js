@@ -82,7 +82,7 @@ function renderCarrito() {
 
                 <div class="cart-row-center">
                     <div class="cart-name">
-                        ${perfume.nombre.toLowerCase()}
+                        ${perfume.nombre.toLowerCase()} ${perfume.subtitulo}
                     </div>
 
                     <div class="cart-meta">
@@ -173,7 +173,7 @@ function actualizarPreviewMensaje() {
         let subtotal = perfume.precioFinal * item.cantidad;
         total += subtotal;
 
-        mensaje += `• ${perfume.nombre} (${item.cantidad}x) - $${subtotal.toLocaleString()}\n`;
+        mensaje += `• ${perfume.nombre} ${perfume.subtitulo.toLowerCase()} (${item.cantidad}x) - $${subtotal.toLocaleString()}\n`;
     });
 
     mensaje += `\nTotal: $${total.toLocaleString()}`;
@@ -291,7 +291,7 @@ function initCartControls() {
                 let subtotal = perfume.precioFinal * item.cantidad;
                 total += subtotal;
 
-                mensaje += `• ${perfume.nombre} (${item.cantidad}x) - $${subtotal.toLocaleString()}%0A`;
+                mensaje += `• ${perfume.nombre} ${perfume.subtitulo} (${item.cantidad}x) - $${subtotal.toLocaleString()}%0A`;
             });
 
             mensaje += `%0ATotal: $${total.toLocaleString()}`;
