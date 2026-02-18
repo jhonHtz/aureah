@@ -1,0 +1,78 @@
+/* ===== NAVBAR ===== */
+
+.navbar {
+    background: white;
+    padding: 25px 0;
+    text-align: center;
+    border-bottom: 1px solid #f0f0f0;
+    top: 0;
+    z-index: 1000;
+    
+    position: sticky;
+    transition: all 0.3s ease;
+}
+
+.logo h1,
+.logo-link {
+    font-family: 'Inter',sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+/* ===== CONTAINER ===== */
+
+.container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+@media (max-width: 640px) {
+    .container {
+        padding: 0 15px;
+    }
+}
+/* ===== NAVBAR MOBILE ===== */
+
+@media (max-width: 640px) {
+
+    .navbar {
+        padding: 32px 35px 20px;
+    }
+
+    .logo h1,
+    .logo-link {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    .filters {
+        gap: 20px;
+        margin-top: 8px;
+    }
+
+    .filter-btn {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+}
+@media (max-width: 640px) {
+
+    .perfume-card {
+        padding: 16px;
+        border-radius: 16px;
+    }
+
+    .image-container {
+        height: 150px;
+    }
+
+    .perfume-name {
+        font-size: 12px;
+    }
+
+    .final-price {
+        font-size: 14px;
+    }
+
+}

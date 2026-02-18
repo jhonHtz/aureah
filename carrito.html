@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrito | Auréa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/catalogo.css">
+    <link rel="stylesheet" href="css/detalle.css">
+    <link rel="stylesheet" href="css/carrito.css">
+    <link rel="stylesheet" href="css/admin.css">
+
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        <h1 onclick="window.location.href='index.html'">PERFUMES</h1>
+    </div>
+</header>
+
+<main class="container">
+
+    <h2 class="cart-title">Resumen de tu pedido</h2>
+
+    <div id="cartContainer"></div>
+
+</main>
+
+<script src="data/iconsUso.js"></script>
+<script src="data/notas.js"></script>
+<script src="data/imagenes.js"></script>
+<script>
+    document.write(
+        '<script src="data/perfumes.js?v=' + Date.now() + '"><\/script>'
+    );
+</script>
+
+<script src="js/core.js"></script>
+<script src="js/cart.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

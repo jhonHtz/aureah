@@ -17,7 +17,10 @@ function initAdminModal() {
 
     closeBtn?.addEventListener("click", () => {
         modal.style.display = "none";
+        document.getElementById("adminForm").reset();
+        resetAdminState();
     });
+
 }
 /* =================================================
    CALCULO DESCUENTO
@@ -244,24 +247,47 @@ function initAdminSubmit() {
 
         localStorage.setItem("perfumesExtra", JSON.stringify(perfumesGuardados));
 
-        alert("Perfume agregado correctamente.");
+        alert("Perfume guardado correctamente.");
+
         form.reset();
+        resetAdminState();
+
+        modal.style.display = "none";
+
         location.reload();
+
     });
 }
 /*************** MANTENER LA INFORMACIÓN DEL PERFUME *********************/
 function resetAdminState() {
 
+    // Reset ID edición
+    window.editingPerfumeId = null;
+
+    // Reset notas
     notasSeleccionadas = {
         salida: [],
         corazon: [],
         fondo: []
     };
 
+    document.querySelectorAll(".tag-container").forEach(c => c.innerHTML = "");
+
+    // Reset uso
     usoSeleccionado = {};
 
-    document.querySelectorAll(".tag-container").forEach(c => c.innerHTML = "");
+    const grid = document.getElementById("usoAdminGrid");
+    if (grid) grid.innerHTML = "";
+
+    // Reset imagen preview
+    const preview = document.getElementById("selectedImagePreview");
+    if (preview) preview.innerHTML = "";
+
+    const hiddenImg = document.getElementById("adminImagen");
+    if (hiddenImg) hiddenImg.value = "";
+
 }
+
 
 const usoTipos = ["primavera","verano","otono","invierno","dia","noche"];
 
@@ -272,39 +298,55 @@ function initUsoAdmin() {
     const grid = document.getElementById("usoAdminGrid");
     if (!grid) return;
 
+    grid.innerHTML = "";
+
+    let perfumeEditando = null;
+
+    if (window.editingPerfumeId) {
+        const perfumes = obtenerPerfumesActuales();
+        perfumeEditando = perfumes.find(p => p.id === window.editingPerfumeId);
+    }
+
     usoTipos.forEach(tipo => {
 
+        const valorInicial = perfumeEditando?.uso?.[tipo]?.porcentaje ?? 50;
+        const activoInicial = perfumeEditando?.uso?.[tipo]?.activo ?? false;
+
         usoSeleccionado[tipo] = {
-            porcentaje: 50,
-            activo: false
+            porcentaje: valorInicial,
+            activo: activoInicial
         };
 
         const item = document.createElement("div");
         item.classList.add("uso-admin-item");
 
+        const activoClass = activoInicial ? "activo" : "";
+
         item.innerHTML = `
-            <div class="uso-admin-icon ${tipo}">
+            <div class="uso-admin-icon ${tipo} ${activoClass}">
                 ${iconsUso[tipo]}
             </div>
 
-            <input type="range" min="0" max="100" value="50" class="uso-range">
+            <input type="range" min="0" max="100" value="${valorInicial}" class="uso-range">
 
-            <span class="uso-range-value">50%</span>
+            <span class="uso-range-value">${valorInicial}%</span>
         `;
 
         const iconContainer = item.querySelector(".uso-admin-icon");
         const range = item.querySelector(".uso-range");
         const value = item.querySelector(".uso-range-value");
-        
 
-        // Toggle activo al hacer click en ícono
+        // Toggle activo
         iconContainer.addEventListener("click", () => {
+
             usoSeleccionado[tipo].activo = !usoSeleccionado[tipo].activo;
+
             iconContainer.classList.toggle("activo");
         });
 
         // Actualizar porcentaje
         range.addEventListener("input", () => {
+
             value.textContent = range.value + "%";
             usoSeleccionado[tipo].porcentaje = parseInt(range.value);
         });
@@ -312,6 +354,7 @@ function initUsoAdmin() {
         grid.appendChild(item);
     });
 }
+
 function initExportPerfumes() {
 
     const btn = document.getElementById("exportPerfumesBtn");

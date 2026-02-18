@@ -15,5 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (typeof initAdminSubmit === "function") initAdminSubmit();
     if (typeof renderDetallePerfume === "function") renderDetallePerfume();
     if (typeof initWelcomeTooltip === "function") initWelcomeTooltip();
-
+    if (typeof actualizarContadorCarrito === "function") actualizarContadorCarrito();
+    if (typeof renderCarrito === "function") renderCarrito();
+    
 });

@@ -57,6 +57,10 @@ function renderDetallePerfume() {
                         <span class="detail-original">$${perfume.precioOriginal.toLocaleString()}</span>
                         <div class="detail-discount">Ahorra ${descuento}%</div>
                     </div>
+                    <button class="detail-add-cart" data-id="${perfume.id}">
+                        Agregar al carrito
+                    </button>
+
                 </div>
             </div>
 
@@ -91,4 +95,11 @@ function renderDetallePerfume() {
             </div>
         </div>
     `;
+    const addBtn = document.querySelector(".detail-add-cart");
+    if (addBtn) {
+        addBtn.addEventListener("click", () => {
+            agregarAlCarrito(perfume.id);
+        });
+    }
+
 }

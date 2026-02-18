@@ -1,0 +1,35 @@
+/* ===== VARIABLES ===== */
+html {
+    overflow-x: hidden;
+}
+
+:root {
+    --color-primary: #b130c2;
+    --color-primary-dark: #8e24aa;
+    --color-bg-light: #F8F7FB;
+    --color-text-main: #1F2937;
+    --color-text-muted: #6B7280;
+}
+
+/* ===== RESET ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--color-bg-light);
+    color: var(--color-text-main);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+}

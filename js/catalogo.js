@@ -2,6 +2,7 @@
    CATALOGO PRINCIPAL
 ================================================= */
 function openEditModal(perfume) {
+    
 
     document.getElementById("adminDisponible").value =
     perfume.disponible === false ? "false" : "true";
@@ -10,6 +11,8 @@ function openEditModal(perfume) {
     modal.style.display = "flex";
 
     resetAdminState();
+    initUsoAdmin();  // reconstruye el grid antes de pintar
+
 
     document.getElementById("adminMarca").value = perfume.marca || "";
     document.getElementById("adminNombre").value = perfume.nombre || "";
@@ -43,28 +46,33 @@ function openEditModal(perfume) {
     });
 
     document.getElementById("adminImagen").value = perfume.imagen;
-
-
     // ===== CARGAR USO =====
     if (perfume.uso) {
-            Object.keys(perfume.uso).forEach(tipo => {
+        Object.keys(perfume.uso).forEach(tipo => {
 
-                usoSeleccionado[tipo] = { ...perfume.uso[tipo] };
+            const item = document
+                .querySelector(`.uso-admin-icon.${tipo}`)
+                ?.closest(".uso-admin-item");
 
-                const item = document.querySelector(`.uso-admin-item .${tipo}`)?.closest(".uso-admin-item");
-                if (!item) return;
+            if (!item) return;
 
-                const icon = item.querySelector(".uso-admin-icon");
-                const range = item.querySelector(".uso-range");
-                const value = item.querySelector(".uso-range-value");
+            const icon = item.querySelector(".uso-admin-icon");
+            const range = item.querySelector(".uso-range");
+            const value = item.querySelector(".uso-range-value");
 
-                if (perfume.uso[tipo].activo) {
-                    icon.classList.add("activo");
-                }
-                range.value = perfume.uso[tipo].porcentaje;
-                value.textContent = perfume.uso[tipo].porcentaje + "%";
-            });
-        }
+            const datos = perfume.uso[tipo];
+
+            // Guardar estado en memoria
+            usoSeleccionado[tipo] = { ...datos };
+
+            // Pintar activo
+            icon.classList.toggle("activo", datos.activo);
+
+            // Actualizar slider
+            range.value = datos.porcentaje;
+            value.textContent = datos.porcentaje + "%";
+        });
+    }
         window.editingPerfumeId = perfume.id;
 }
 function renderPerfumes(filtro = "all") {
@@ -132,9 +140,17 @@ function renderPerfumes(filtro = "all") {
                     <span class="final-price">$${perfume.precioFinal.toLocaleString()}</span>
                     <span class="original-price">$${perfume.precioOriginal.toLocaleString()}</span>
                 </div>
-                <div class="view-more">
-                    Ver detalles
-                </div>
+                
+                <button class="add-to-cart-btn" data-id="${perfume.id}">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 
+                                2 1.61h9.72a2 2 0 0 0 
+                                2-1.61L23 6H6"></path>
+                    </svg>
+                </button>
 
             </div>
 
@@ -162,6 +178,7 @@ function renderPerfumes(filtro = "all") {
             adminControls.querySelector(".edit-btn").addEventListener("click", (e) => {
                 e.preventDefault();
                 openEditModal(perfume);
+                
             });
 
             adminControls.querySelector(".delete-btn").addEventListener("click", (e) => {
@@ -169,7 +186,13 @@ function renderPerfumes(filtro = "all") {
                 deletePerfume(perfume.id);
             });
         }
-
+        const addBtn = card.querySelector(".add-to-cart-btn");
+        if (addBtn) {
+            addBtn.addEventListener("click", (e) => {
+                e.preventDefault();
+                agregarAlCarrito(perfume.id);
+            });
+        }
 
         grid.appendChild(card);
     });
@@ -293,7 +316,7 @@ function initWelcomeTooltip() {
     }
 
     // Cerrar con botón
-    closeBtn.addEventListener("click", cerrarTooltip);
+    document.addEventListener("click", cerrarTooltip);
 
     // Cerrar al hacer scroll
     window.addEventListener("scroll", cerrarTooltip, { once: true });
@@ -301,3 +324,36 @@ function initWelcomeTooltip() {
     // Cerrar al tocar cualquier card
     document.addEventListener("click", detectarClickCard);
 }
+/*
+function mostrarTooltipInicial() {
+
+    if (localStorage.getItem("tooltipVisto")) return;
+
+    const tooltip = document.createElement("div");
+    tooltip.classList.add("tooltip-card");
+    tooltip.innerHTML = `
+        <strong>Tip:</strong><br>
+        Toca cualquier perfume para ver su información.
+    `;
+
+    document.body.appendChild(tooltip);
+
+    setTimeout(() => {
+        tooltip.classList.add("hide");
+        localStorage.setItem("tooltipVisto", "true");
+        setTimeout(() => tooltip.remove(), 300);
+    }, 5000);
+
+    window.addEventListener("scroll", () => {
+        tooltip.classList.add("hide");
+        setTimeout(() => tooltip.remove(), 500);
+    });
+
+    document.addEventListener("click", () => {
+        tooltip.classList.add("hide");
+        setTimeout(() => tooltip.remove(), 500);
+    });
+}
+
+mostrarTooltipInicial();
+*/

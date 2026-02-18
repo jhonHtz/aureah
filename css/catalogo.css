@@ -1,0 +1,471 @@
+.container {
+    max-width: 1400px;
+    margin: 40px auto 60px; /* margen arriba menor */
+    padding: 0 20px;
+}
+
+body {
+    background: var(--color-bg-light);
+}
+
+/* ===== GRID BASE ===== */
+
+.perfume-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px 10px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .perfume-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Móvil */
+@media (max-width: 640px) {
+    .perfume-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .perfume-card {
+        padding: 18px;
+    }
+
+    .image-container {
+        height: 160px;
+    }
+
+    .final-price {
+        font-size: 14px;
+    }
+
+    .original-price {
+        font-size: 12px;
+    }
+}
+
+
+
+/* ===== FILTROS LUXURY ===== */
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.filter-btn {
+    background: none;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 6px;
+    padding: 0 5px;
+    transition: color 0.3s ease;
+}
+
+/* Línea animada */
+.filter-btn::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 1.5px;
+    left: 0;
+    bottom: 0;
+    background: var(--color-primary);
+    transition: width 0.3s ease;
+}
+
+/* Hover */
+.filter-btn:hover {
+    color: var(--color-text-main);
+}
+
+.filter-btn:hover::after {
+    width: 100%;
+}
+
+/* Activo */
+.filter-btn.active {
+    color: var(--color-text-main);
+    font-weight: 600;
+}
+
+.filter-btn.active::after {
+    width: 100%;
+}
+
+/* ===== GRID ===== */
+
+.perfume-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* ===== CARD ===== */
+
+.perfume-card {
+    background: #ffffff;
+    border: 1px solid #f1f1f1;
+    border-radius: 20px;
+    padding: 32px 32px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.35s ease;
+    position: relative;
+}
+
+.perfume-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 30px 70px rgba(0,0,0,0.08);
+}
+
+/* ===== IMAGEN ===== */
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-bottom: 5px;
+}
+
+.image-container img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    transition: 0.3s ease;
+}
+
+.perfume-card:hover .image-container img {
+    transform: scale(1.05);
+}
+
+/* ===== INFO ===== */
+
+.perfume-info {
+    text-align: center;
+}
+
+/* Marca */
+.perfume-brand {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    margin-bottom: 4px;
+}
+
+/* Nombre */
+.perfume-name {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+/* Subtítulo */
+.perfume-sub {
+    font-size: 11px;
+    color: var(--color-text-muted);
+    margin-left: 6px;
+}
+
+/* ===== PRECIOS ===== */
+
+.price-container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.final-price {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-text-main);
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #9CA3AF;
+    font-size: 13px;
+}
+
+/* ===== BADGE DESCUENTO ===== */
+
+.discount-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: var(--color-primary);
+    color: white;
+    font-size: 11px;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* ===== NO DISPONIBLE ===== */
+
+.no-disponible-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #111;
+    color: white;
+    font-size: 10px;
+    padding: 6px 10px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+}
+
+.perfume-card.no-stock {
+    opacity: 0.5;
+}
+
+/* ===== MOSTRAR MÁS ===== */
+
+#mostrarMasBtn {
+    margin: 45px auto 70px auto;
+    display: block;
+    padding: 14px 35px;
+    border-radius: 30px;
+    border: 1px solid var(--color-primary);
+    background: transparent;
+    color: var(--color-primary);
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#mostrarMasBtn:hover {
+    background: var(--color-primary);
+    color: white;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 640px) {
+
+    .container {
+        margin: 24px auto;
+    }
+
+    .perfume-card {
+        padding: 15px 20px;
+    }
+
+    .detail-layout {
+        gap: 30px;
+    }
+
+    .detail-final {
+        font-size: 22px;
+    }
+
+    .notes-grid {
+        gap: 20px;
+    }
+
+    .uso-grid {
+        gap: 25px;
+    }
+
+    .cart-floating {
+        width: 50px;
+        height: 50px;
+    }
+}
+/* ===== ADMIN CARD CONTROLS ===== */
+
+.admin-card-controls {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    gap: 8px;
+}
+
+.admin-card-controls button {
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    transition: 0.25s ease;
+}
+
+/* Editar */
+.admin-card-controls .edit-btn {
+    background: #F3E8FF;
+    color: var(--color-primary-dark);
+}
+
+.admin-card-controls .edit-btn:hover {
+    background: var(--color-primary);
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Eliminar */
+.admin-card-controls .delete-btn {
+    background: #FEF2F2;
+    color: #B91C1C;
+}
+
+.admin-card-controls .delete-btn:hover {
+    background: #DC2626;
+    color: white;
+    transform: scale(1.1);
+}
+/* ===== BOTÓN AGREGAR EN CARD ===== */
+
+.add-to-cart-btn {
+
+    margin-top: 20px;
+
+    width: 70%;
+    height: 20%;
+    margin-left: 16%;
+    padding: 10px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 30px;
+    border: none;
+
+    background: #b130c2;
+    color: white;
+
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 2px 10px #b130c22d;
+
+    z-index: 5;
+}
+
+.add-to-cart-btn svg {
+    width: 13px;
+    height: 13px;
+}
+
+.add-to-cart-btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 2px 15px rgba(177,48,194,0.45);
+}
+.add-to-cart-btn {
+    background: white;
+    color: #b130c2;
+    border: 1px solid rgba(177,48,194,0.3);
+}
+/* ===== TOOLTIP BIENVENIDA ===== */
+
+.welcome-tooltip-mini {
+    position: absolute;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.tooltip-bubble {
+    background: white;
+    color: #2E2E2E;
+
+    padding: 10px 16px;
+    border-radius: 12px;
+
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+/* Flechita */
+.tooltip-bubble::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 20px;
+
+    width: 12px;
+    height: 12px;
+    background: white;
+
+    transform: rotate(45deg);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Mostrar */
+.welcome-tooltip-mini.show .tooltip-bubble {
+    opacity: 1;
+    transform: translateY(15px) scale(0.95);
+
+}
+
+/* Botón cerrar */
+#closeTooltip {
+    border: none;
+    background: none;
+    font-size: 14px;
+    cursor: pointer;
+    color: #999;
+}
+
+#closeTooltip:hover {
+    color: #b130c2;
+}
+/* intro  */
+.intro-explore {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #4B5563;
+}
+/* Highlight suave en card */
+
+.perfume-card.highlight {
+    position: relative;
+    z-index: 5;
+    box-shadow: 0 0 0 2px rgba(177,48,194,0.25),
+                0 20px 40px rgba(177,48,194,0.15);
+    animation: pulseHighlight 2s ease-in-out infinite;
+}
+
+@keyframes pulseHighlight {
+    0% {
+        box-shadow: 0 0 0 2px rgba(177,48,194,0.25),
+                    0 20px 40px rgba(177,48,194,0.15);
+    }
+    50% {
+        box-shadow: 0 0 0 4px rgba(177,48,194,0.35),
+                    0 25px 50px rgba(177,48,194,0.2);
+    }
+    100% {
+        box-shadow: 0 0 0 2px rgba(177,48,194,0.25),
+                    0 20px 40px rgba(177,48,194,0.15);
+    }
+}

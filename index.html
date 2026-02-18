@@ -8,7 +8,15 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/catalogo.css">
+    <link rel="stylesheet" href="css/detalle.css">
+    <link rel="stylesheet" href="css/carrito.css">
+    <link rel="stylesheet" href="css/admin.css">
+
+
 </head>
 <body>
 
@@ -22,7 +30,7 @@
             <button class="filter-btn active" data-filter="all">Todos</button>
             <button class="filter-btn" data-filter="mujer">Mujer</button>
             <button class="filter-btn" data-filter="hombre">Hombre</button>
-            <a href="como-funciona.html" class="filter-btn">Cómo funciona</a>
+            <a href="como-funciona.html" class="filter-btn">Contacto</a>
         </nav>
     </header>
     
@@ -45,11 +53,11 @@
                 
 
                 <div class="perfume-info">
-                    <h3 class="perfume-name">Erba Pura</h3>
+                    <h3 class="perfume-name"></h3>
 
                     <div class="price-container">
-                        <span class="final-price">$3,690</span>
-                        <span class="original-price">$4,500</span>
+                        <span class="final-price"></span>
+                        <span class="original-price"></span>
                     </div>
                 </div>
             </a>
@@ -169,6 +177,21 @@
         </div>
     </div>
 
+    <button id="scrollTopBtn" class="scroll-top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <div id="welcomeTooltip" class="welcome-tooltip-mini">
+        <div class="tooltip-bubble">
+            👋 Toca el perfume para ver detalles
+            <button id="closeTooltip">X</button>
+        </div>
+    </div>
+
+
     <script src="data/iconsUso.js"></script>
     <script src="data/notas.js"></script>
     <script src="data/imagenes.js"></script>
@@ -178,28 +201,23 @@
         );
     </script>
 
-    <button id="scrollTopBtn" aria-label="Volver arriba">
-        <svg viewBox="0 0 24 24" width="20" height="20">
-            <path d="M12 19V5M12 5L5 12M12 5L19 12"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"/>
-        </svg>
-    </button>
-
     <script src="js/core.js"></script>
     <script src="js/catalogo.js"></script>
     <script src="js/admin.js"></script>
+    <script src="js/cart.js"></script>
     <script src="script.js"></script>
 
-    <div id="welcomeTooltip" class="welcome-tooltip-mini">
-        <div class="tooltip-bubble">
-            👋 Toca el perfume para ver detalles
-            <button id="closeTooltip">×</button>
-        </div>
-    </div>
-
+    <a href="carrito.html" class="cart-floating">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 
+                    2 1.61h9.72a2 2 0 0 0 
+                    2-1.61L23 6H6"></path>
+        </svg>
+        <span id="cartCount" class="cart-count">0</span>
+    </a>
 
 </body>
 </html>
