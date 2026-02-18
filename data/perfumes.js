@@ -422,7 +422,7 @@ const perfumes = [
         "subtitulo": "EDP",
         "genero": "mujer",
         "precioOriginal": 3235,
-        "precioFinal": 2180,
+        "precioFinal": 2080,
         "imagen": "assets/img/perfumes/rose.png",
         "notas": {
             "salida": [
@@ -463,7 +463,8 @@ const perfumes = [
                 "porcentaje": 79,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771043112414,
@@ -472,7 +473,7 @@ const perfumes = [
         "subtitulo": "EDP",
         "genero": "mujer",
         "precioOriginal": 3235,
-        "precioFinal": 2230,
+        "precioFinal": 2130,
         "imagen": "assets/img/perfumes/rose2.png",
         "notas": {
             "salida": [
@@ -512,7 +513,8 @@ const perfumes = [
                 "porcentaje": 56,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771044135144,
@@ -521,7 +523,7 @@ const perfumes = [
         "subtitulo": "Intense",
         "genero": "mujer",
         "precioOriginal": 3735,
-        "precioFinal": 2430,
+        "precioFinal": 2390,
         "imagen": "assets/img/perfumes/fameintense.png",
         "notas": {
             "salida": [
@@ -565,7 +567,8 @@ const perfumes = [
                 "porcentaje": 74,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771045417384,
@@ -627,7 +630,7 @@ const perfumes = [
         "subtitulo": "Parfum",
         "genero": "mujer",
         "precioOriginal": 3805,
-        "precioFinal": 2580,
+        "precioFinal": 2480,
         "imagen": "assets/img/perfumes/fame.png",
         "notas": {
             "salida": [
@@ -672,7 +675,8 @@ const perfumes = [
                 "porcentaje": 96,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771091280287,
@@ -681,7 +685,7 @@ const perfumes = [
         "subtitulo": "EDP",
         "genero": "mujer",
         "precioOriginal": 3800,
-        "precioFinal": 2530,
+        "precioFinal": 2460,
         "imagen": "assets/img/perfumes/yslblack.png",
         "notas": {
             "salida": [
@@ -727,7 +731,8 @@ const perfumes = [
                 "porcentaje": 89,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771091933567,
@@ -736,7 +741,7 @@ const perfumes = [
         "subtitulo": "EDP",
         "genero": "mujer",
         "precioOriginal": 3830,
-        "precioFinal": 2550,
+        "precioFinal": 2500,
         "imagen": "assets/img/perfumes/libreedp.png",
         "notas": {
             "salida": [
@@ -782,7 +787,8 @@ const perfumes = [
                 "porcentaje": 86,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771092362924,
@@ -791,7 +797,7 @@ const perfumes = [
         "subtitulo": "EDP",
         "genero": "mujer",
         "precioOriginal": 3800,
-        "precioFinal": 2480,
+        "precioFinal": 2420,
         "imagen": "assets/img/perfumes/yslgris.png",
         "notas": {
             "salida": [
@@ -835,7 +841,8 @@ const perfumes = [
                 "porcentaje": 50,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771093105410,
@@ -899,7 +906,8 @@ const perfumes = [
                 "porcentaje": 94,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771093708556,
@@ -908,7 +916,7 @@ const perfumes = [
         "subtitulo": "EDP",
         "genero": "mujer",
         "precioOriginal": 3850,
-        "precioFinal": 2550,
+        "precioFinal": 2460,
         "imagen": "assets/img/perfumes/ggb.png",
         "notas": {
             "salida": [
@@ -949,7 +957,8 @@ const perfumes = [
                 "porcentaje": 36,
                 "activo": false
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771093973568,
@@ -958,7 +967,7 @@ const perfumes = [
         "subtitulo": "EDP",
         "genero": "mujer",
         "precioOriginal": 4025,
-        "precioFinal": 2680,
+        "precioFinal": 2580,
         "imagen": "assets/img/perfumes/ggbe.png",
         "notas": {
             "salida": [
@@ -999,7 +1008,8 @@ const perfumes = [
                 "porcentaje": 94,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771094912980,
@@ -1271,7 +1281,7 @@ const perfumes = [
         "subtitulo": "EDP",
         "genero": "hombre",
         "precioOriginal": 2920,
-        "precioFinal": 1330,
+        "precioFinal": 1230,
         "imagen": "assets/img/perfumes/mb.png",
         "notas": {
             "salida": [
@@ -1318,7 +1328,8 @@ const perfumes = [
                 "porcentaje": 76,
                 "activo": false
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771099121273,
@@ -1381,7 +1392,7 @@ const perfumes = [
         "subtitulo": "EDP",
         "genero": "hombre",
         "precioOriginal": 2590,
-        "precioFinal": 1430,
+        "precioFinal": 1230,
         "imagen": "assets/img/perfumes/coach.png",
         "notas": {
             "salida": [
@@ -1422,7 +1433,8 @@ const perfumes = [
                 "porcentaje": 34,
                 "activo": false
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771100872199,
@@ -3740,5 +3752,390 @@ const perfumes = [
                 "activo": true
             }
         }
+    },
+    {
+        "id": 1771432516801,
+        "marca": "ARMAF",
+        "nombre": "ODYSSEY AQUA 100ml",
+        "subtitulo": "EDP",
+        "genero": "hombre",
+        "precioOriginal": 1480,
+        "precioFinal": 860,
+        "imagen": "assets/img/perfumes/aqua.png",
+        "notas": {
+            "salida": [
+                "naranja",
+                "toronja (pomelo)"
+            ],
+            "corazon": [
+                "menta",
+                "lavanda"
+            ],
+            "fondo": [
+                "ambroxan",
+                "cipres",
+                "pachulí"
+            ]
+        },
+        "uso": {
+            "primavera": {
+                "porcentaje": 78,
+                "activo": true
+            },
+            "verano": {
+                "porcentaje": 88,
+                "activo": true
+            },
+            "otono": {
+                "porcentaje": 30,
+                "activo": false
+            },
+            "invierno": {
+                "porcentaje": 14,
+                "activo": false
+            },
+            "dia": {
+                "porcentaje": 89,
+                "activo": true
+            },
+            "noche": {
+                "porcentaje": 32,
+                "activo": false
+            }
+        },
+        "disponible": true
+    },
+    {
+        "id": 1771433256732,
+        "marca": "ARMAF",
+        "nombre": "ODYSSEY MEGA 100ml",
+        "subtitulo": "EDP",
+        "genero": "hombre",
+        "precioOriginal": 1250,
+        "precioFinal": 660,
+        "imagen": "assets/img/perfumes/mega.png",
+        "notas": {
+            "salida": [
+                "naranja",
+                "bergamota",
+                "limón (lima ácida)",
+                "jengibre",
+                "menta"
+            ],
+            "corazon": [
+                "piña",
+                "salvia",
+                "enebro",
+                "geranio"
+            ],
+            "fondo": [
+                "almizcle",
+                "cedro",
+                "haba tonka",
+                "vetiver"
+            ]
+        },
+        "uso": {
+            "primavera": {
+                "porcentaje": 83,
+                "activo": true
+            },
+            "verano": {
+                "porcentaje": 95,
+                "activo": true
+            },
+            "otono": {
+                "porcentaje": 49,
+                "activo": false
+            },
+            "invierno": {
+                "porcentaje": 29,
+                "activo": false
+            },
+            "dia": {
+                "porcentaje": 87,
+                "activo": true
+            },
+            "noche": {
+                "porcentaje": 46,
+                "activo": false
+            }
+        },
+        "disponible": true
+    },
+    {
+        "id": 1771434190808,
+        "marca": "HALLOWEEN",
+        "nombre": "MAN X 125ml",
+        "subtitulo": "EDT",
+        "genero": "hombre",
+        "precioOriginal": 1650,
+        "precioFinal": 960,
+        "imagen": "assets/img/perfumes/man.png",
+        "notas": {
+            "salida": [
+                "cardamomo",
+                "lavanda",
+                "limón (lima ácida)"
+            ],
+            "corazon": [
+                "café",
+                "canela",
+                "cuero",
+                "notas minerales",
+                "wisky"
+            ],
+            "fondo": [
+                "haba tonka",
+                "ámbar",
+                "incienso"
+            ]
+        },
+        "uso": {
+            "primavera": {
+                "porcentaje": 32,
+                "activo": false
+            },
+            "verano": {
+                "porcentaje": 20,
+                "activo": false
+            },
+            "otono": {
+                "porcentaje": 84,
+                "activo": true
+            },
+            "invierno": {
+                "porcentaje": 100,
+                "activo": true
+            },
+            "dia": {
+                "porcentaje": 34,
+                "activo": false
+            },
+            "noche": {
+                "porcentaje": 94,
+                "activo": true
+            }
+        },
+        "disponible": true
+    },
+    {
+        "id": 1771434554117,
+        "marca": "AFNAN",
+        "nombre": "9PM 100ml",
+        "subtitulo": "EDP",
+        "genero": "hombre",
+        "precioOriginal": 1220,
+        "precioFinal": 650,
+        "imagen": "assets/img/perfumes/9pm.png",
+        "notas": {
+            "salida": [
+                "manzana",
+                "canela",
+                "lavanda silvestre",
+                "bergamota"
+            ],
+            "corazon": [
+                "flor de azahar del naranjo",
+                "lirio de los valles"
+            ],
+            "fondo": [
+                "vainilla",
+                "haba tonka",
+                "ámbar",
+                "pachulí"
+            ]
+        },
+        "uso": {
+            "primavera": {
+                "porcentaje": 37,
+                "activo": false
+            },
+            "verano": {
+                "porcentaje": 21,
+                "activo": false
+            },
+            "otono": {
+                "porcentaje": 85,
+                "activo": true
+            },
+            "invierno": {
+                "porcentaje": 91,
+                "activo": true
+            },
+            "dia": {
+                "porcentaje": 27,
+                "activo": false
+            },
+            "noche": {
+                "porcentaje": 92,
+                "activo": false
+            }
+        },
+        "disponible": true
+    },
+    {
+        "id": 1771434684126,
+        "marca": "AFNAN",
+        "nombre": "9AM 100ml",
+        "subtitulo": "EDP",
+        "genero": "hombre",
+        "precioOriginal": 1300,
+        "precioFinal": 680,
+        "imagen": "assets/img/perfumes/9am.png",
+        "notas": {
+            "salida": [
+                "limón siliciano",
+                "menta",
+                "grosellas negras",
+                "pimienta rosa"
+            ],
+            "corazon": [
+                "manzana",
+                "cedro",
+                "incienso"
+            ],
+            "fondo": [
+                "jengibre",
+                "sándalo",
+                "pachulí",
+                "jazmín"
+            ]
+        },
+        "uso": {
+            "primavera": {
+                "porcentaje": 80,
+                "activo": true
+            },
+            "verano": {
+                "porcentaje": 93,
+                "activo": true
+            },
+            "otono": {
+                "porcentaje": 24,
+                "activo": false
+            },
+            "invierno": {
+                "porcentaje": 9,
+                "activo": false
+            },
+            "dia": {
+                "porcentaje": 94,
+                "activo": true
+            },
+            "noche": {
+                "porcentaje": 41,
+                "activo": false
+            }
+        },
+        "disponible": true
+    },
+    {
+        "id": 1771435341615,
+        "marca": "GIORGIO ARMANI",
+        "nombre": "MY WAY 100ml",
+        "subtitulo": "Parfum",
+        "genero": "mujer",
+        "precioOriginal": 3900,
+        "precioFinal": 2450,
+        "imagen": "assets/img/perfumes/myway.png",
+        "notas": {
+            "salida": [
+                "flor de azahar del naranjo",
+                "naranja amarga",
+                "bergamota de Calabria"
+            ],
+            "corazon": [
+                "iris pallida",
+                "nardo de la india",
+                "almizcle ambreta"
+            ],
+            "fondo": [
+                "almizcle blanco",
+                "vainilla de Bourbon",
+                "cedro"
+            ]
+        },
+        "uso": {
+            "primavera": {
+                "porcentaje": 94,
+                "activo": true
+            },
+            "verano": {
+                "porcentaje": 49,
+                "activo": false
+            },
+            "otono": {
+                "porcentaje": 100,
+                "activo": true
+            },
+            "invierno": {
+                "porcentaje": 84,
+                "activo": true
+            },
+            "dia": {
+                "porcentaje": 87,
+                "activo": true
+            },
+            "noche": {
+                "porcentaje": 95,
+                "activo": true
+            }
+        },
+        "disponible": true
+    },
+    {
+        "id": 1771435718847,
+        "marca": "YVES SAINT LAURENT",
+        "nombre": "LIBRE 90ml",
+        "subtitulo": "EDT",
+        "genero": "mujer",
+        "precioOriginal": 3100,
+        "precioFinal": 2100,
+        "imagen": "assets/img/perfumes/libreedt.png",
+        "notas": {
+            "salida": [
+                "lavanda",
+                "bergamota",
+                "mandarina"
+            ],
+            "corazon": [
+                "flor de azahar del naranjo",
+                "té de jazmín",
+                "jazmín"
+            ],
+            "fondo": [
+                "almizcle",
+                "vainilla",
+                "ámbar gris"
+            ]
+        },
+        "uso": {
+            "primavera": {
+                "porcentaje": 92,
+                "activo": true
+            },
+            "verano": {
+                "porcentaje": 84,
+                "activo": true
+            },
+            "otono": {
+                "porcentaje": 87,
+                "activo": true
+            },
+            "invierno": {
+                "porcentaje": 22,
+                "activo": false
+            },
+            "dia": {
+                "porcentaje": 100,
+                "activo": true
+            },
+            "noche": {
+                "porcentaje": 54,
+                "activo": false
+            }
+        },
+        "disponible": true
     }
 ];
