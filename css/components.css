@@ -193,9 +193,7 @@
 
 .cart-count.animate {
     animation: cartPop 0.35s ease;
-    box-shadow: 0 0 8px rgba(194, 77, 48, 0.699);
 }
-
 
 @keyframes cartPop {
     0% {
