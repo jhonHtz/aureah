@@ -54,7 +54,7 @@ function renderCarrito() {
     let perfumesActuales = obtenerPerfumesActuales();
 
     if (carrito.length === 0) {
-        container.innerHTML = "<p class='cart-empty'>Tu carrito está vacío.</p>";
+        container.innerHTML = "<p class='cart-empty'>Tu carrito está vacío. Agrega perfumes del catálogo para poder generar el pedido</p>";
         return;
     }
 

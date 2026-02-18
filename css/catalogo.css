@@ -259,7 +259,7 @@ body {
 @media (max-width: 640px) {
 
     .container {
-        margin: 24px auto;
+        margin: 15px auto;
     }
 
     .perfume-card {
@@ -468,4 +468,101 @@ body {
         box-shadow: 0 0 0 2px rgba(177,48,194,0.25),
                     0 20px 40px rgba(177,48,194,0.15);
     }
+}
+.mini-info-block {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 35px;
+    border-radius: 24px;
+    background: #fafafa;
+    border: 1px solid #eee;
+}
+
+.mini-info-block h3 {
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    color: #222;
+}
+
+/* CONTENEDOR */
+.mini-steps {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 70px;
+    position: relative;
+}
+
+/* LÍNEAS */
+.mini-steps::before {
+    content: "";
+    position: absolute;
+    top: 32px;
+    left: 15%;
+    right: 15%;
+    height: 1px;
+    background: #e5e5e5;
+    z-index: 0;
+}
+
+/* CADA PASO */
+.mini-step {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.mini-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid #b130c24d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #b130c2;
+    transition: 0.3s ease;
+    box-shadow: 0 3px 25px #b130c26c;
+}
+
+.mini-icon svg {
+    width: 22px;
+    height: 22px;
+}
+
+.mini-step:hover .mini-icon {
+    border-color: #b130c2;
+    box-shadow: 0 8px 20px rgba(177,48,194,0.15);
+}
+
+.mini-step p {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.4;
+}
+
+@media (max-width: 640px) {
+
+    .mini-steps {
+        gap: 20px;
+    }
+
+    .mini-step {
+        max-width: 80px;
+    }
+
+    .mini-icon {
+        font-size: 18px;
+    }
+
+    .mini-step p {
+        font-size: 10px;
+    }
+
 }

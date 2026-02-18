@@ -68,17 +68,18 @@ body {
     width: 52px;
     height: 52px;
     border-radius: 50%;
-    background: #b130c2c5;
     color: white;
     border: none;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    opacity: 0;
     visibility: hidden;
     transform: translateY(20px);
     transition: all 0.4s ease;
+    
+    background: #b130c2c5;
+    opacity: 0;
     box-shadow: 0 5px 25px #b130c2c5;
     z-index: 999;
 }
