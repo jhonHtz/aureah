@@ -58,7 +58,7 @@
     transition: 0.3s ease;
     z-index: 1500;
     background: #b130c2c5;
-    box-shadow: 0 5px 25px #b130c2c5;
+    box-shadow: 0 5px 25px #b130c28f;
 }
 
 .scroll-top svg {
@@ -187,5 +187,24 @@
     .qty-plus {
         width: 34px;
         height: 34px;
+    }
+}
+/* ===== ANIMACIÓN CONTADOR CARRITO ===== */
+
+.cart-count.animate {
+    animation: cartPop 0.35s ease;
+    box-shadow: 0 0 8px rgba(194, 77, 48, 0.699);
+}
+
+
+@keyframes cartPop {
+    0% {
+        transform: scale(1);
+    }
+    40% {
+        transform: scale(1.25);
+    }
+    100% {
+        transform: scale(1);
     }
 }

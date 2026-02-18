@@ -35,15 +35,27 @@ function agregarAlCarrito(idPerfume) {
 // ===== ACTUALIZAR CONTADOR =====
 function actualizarContadorCarrito() {
 
+    const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
     const contador = document.getElementById("cartCount");
+
     if (!contador) return;
 
-    let carrito = obtenerCarrito();
+    const total = carrito.reduce((acc, item) => acc + item.cantidad, 0);
 
-    let totalUnidades = carrito.reduce((acc, item) => acc + item.cantidad, 0);
+    // Solo animar si cambia
+    if (parseInt(contador.textContent) !== total) {
 
-    contador.textContent = totalUnidades;
+        contador.textContent = total;
+
+        contador.classList.remove("animate");
+        void contador.offsetWidth; // reinicia animación
+        contador.classList.add("animate");
+
+    } else {
+        contador.textContent = total;
+    }
 }
+
 
 function renderCarrito() {
 
@@ -132,7 +144,7 @@ function renderCarrito() {
     html += `
         <div class="cart-message-preview">
             <div class="cart-preview-title">
-                El mensaje que se enviará será:
+                El mensaje automático que se enviará será:
             </div>
             <div id="previewMessage" class="cart-preview-box">
             </div>

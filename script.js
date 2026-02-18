@@ -19,3 +19,20 @@ document.addEventListener("DOMContentLoaded", () => {
     if (typeof renderCarrito === "function") renderCarrito();
     
 });
+/* =================================================
+   SINCRONIZAR AL VOLVER CON BOTÓN ATRÁS (MÓVIL)
+================================================= */
+
+window.addEventListener("pageshow", function () {
+
+    // Actualizar contador siempre
+    if (typeof actualizarContadorCarrito === "function") {
+        actualizarContadorCarrito();
+    }
+
+    // Si estamos en carrito, volver a renderizar
+    if (typeof renderCarrito === "function") {
+        renderCarrito();
+    }
+
+});
