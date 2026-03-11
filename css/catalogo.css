@@ -60,7 +60,7 @@ body {
 .filter-btn {
     background: none;
     border: none;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     letter-spacing: 0.5px;
     text-transform: uppercase;
@@ -565,4 +565,284 @@ body {
         font-size: 10px;
     }
 
+}
+
+/* ===== TRUST BLOCK (ESTILO MINI-INFO) ===== */
+/*
+.trust-block {
+    margin: 20px 0 40px;
+    padding: 35px;
+    border-radius: 24px;
+    background: #fafafa;
+    border: 1px solid #eee;
+    text-align: center;
+}
+
+.trust-grid {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 70px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.trust-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    max-width: 180px;
+    z-index: 1;
+}
+
+.trust-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid #b130c24d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #b130c2;
+    box-shadow: 0 3px 25px #b130c250;
+    transition: 0.3s ease;
+}
+
+.trust-icon svg {
+    width: 22px;
+    height: 22px;
+}
+
+.trust-item:hover .trust-icon {
+    border-color: #b130c2;
+    box-shadow: 0 8px 20px rgba(177,48,194,0.15);
+}
+
+.trust-item p {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* SOCIAL LINKS */
+/*
+.trust-social {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #b130c2;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.social-link svg {
+    width: 16px;
+    height: 16px;
+}
+
+.social-link:hover {
+    opacity: 0.7;
+}
+*/
+/* ===== RESPONSIVE ===== */
+/*
+@media (max-width: 640px) {
+
+    .trust-grid {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .trust-item {
+        max-width: 80px;
+    }
+
+    .trust-item p {
+        font-size: 10px;
+    }
+
+    .trust-social {
+        flex-direction: row;
+        gap: 20px;
+        margin-top: 10px;
+    }
+
+    .social-link {
+        font-size: 11px;
+    }
+}
+.trust-grid::before {
+    content: "";
+    position: absolute;
+    top: 32px;
+    left: 15%;
+    right: 15%;
+    height: 1px;
+    background: #e5e5e5;
+    z-index: 0;
+}
+*/
+/*
+.sort-select {
+    background: none;
+    border: none;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    padding-bottom: 6px;
+    transition: color 0.3s ease;
+}
+
+.sort-select:hover {
+    color: var(--color-text-main);
+}
+
+.sort-select:focus {
+    outline: none;
+}
+.sort-btn {
+    opacity: 0.7;
+}
+
+.sort-btn.active-sort {
+    opacity: 1;
+    font-weight: 600;
+}*/
+
+/* ===== BOTÓN AROMA ===== */
+
+.aroma-filter-trigger {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.aroma-btn {
+    background: none;
+    border: 1px solid #b130c24d;
+    padding: 10px 22px;
+    border-radius: 30px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #b130c2;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.aroma-btn:hover {
+    background: #b130c2;
+    color: white;
+}
+
+/* ===== OVERLAY ===== */
+
+.aroma-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.3);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease;
+    z-index: 1000;
+}
+
+.aroma-overlay.show {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* ===== PANEL ===== */
+
+.aroma-panel {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    border-radius: 25px 25px 0 0;
+    padding: 25px;
+    transition: 0.35s ease;
+    z-index: 1001;
+}
+
+.aroma-panel.show {
+    bottom: 0;
+}
+
+.aroma-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.aroma-header h3 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.aroma-header button {
+    border: none;
+    background: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* ===== CHIPS ===== */
+
+.aroma-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.aroma-chip {
+    border: 1px solid #eee;
+    background: #fafafa;
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.aroma-chip.active {
+    background: #b130c2;
+    color: white;
+    border-color: #b130c2;
+}
+
+/* ===== APPLY BUTTON ===== */
+
+.apply-aroma-btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 30px;
+    border: none;
+    background: #b130c2;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.no-results {
+    text-align: center;
+    padding: 40px;
+    color: #777;
+    font-size: 14px;
 }

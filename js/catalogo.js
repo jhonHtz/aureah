@@ -1,6 +1,43 @@
 /* =================================================
    CATALOGO PRINCIPAL
 ================================================= */
+let aromasSeleccionados = [];
+
+function cumpleFiltroAroma(perfume) {
+
+    if (aromasSeleccionados.length === 0) return true;
+
+    if (!perfume.notas) return false;
+
+    // Obtener todas las notas del perfume
+    const todasNotas = [
+        ...(perfume.notas.salida || []),
+        ...(perfume.notas.corazon || []),
+        ...(perfume.notas.fondo || [])
+    ];
+
+    // Detectar familias presentes
+    const familiasDetectadas = new Set();
+
+    todasNotas.forEach(nota => {
+
+        const ruta = notasDisponibles[nota];
+
+        if (!ruta) return;
+
+        aromasSeleccionados.forEach(aroma => {
+            if (ruta.includes(`/${aroma}/`)) {
+                familiasDetectadas.add(aroma);
+            }
+        });
+
+    });
+
+    // Debe contener TODAS las seleccionadas (AND)
+    return aromasSeleccionados.every(aroma =>
+        familiasDetectadas.has(aroma)
+    );
+}
 function openEditModal(perfume) {
     
 
@@ -75,6 +112,28 @@ function openEditModal(perfume) {
     }
         window.editingPerfumeId = perfume.id;
 }
+/*
+let ordenActual = "random";
+
+function ordenarPerfumes(lista) {
+
+    let copia = [...lista];
+
+    if (ordenActual === "random") {
+        return copia.sort(() => Math.random() - 0.5);
+    }
+
+    if (ordenActual === "price-asc") {
+        return copia.sort((a, b) => a.precioFinal - b.precioFinal);
+    }
+
+    if (ordenActual === "price-desc") {
+        return copia.sort((a, b) => b.precioFinal - a.precioFinal);
+    }
+
+    return copia;
+}*/
+
 function renderPerfumes(filtro = "all") {
 
     filtroActual = filtro;
@@ -100,6 +159,18 @@ function renderPerfumes(filtro = "all") {
         );
     }
 
+    perfumesFiltrados = perfumesFiltrados.filter(p =>
+        cumpleFiltroAroma(p)
+    );
+    if (perfumesFiltrados.length === 0) {
+        grid.innerHTML = `
+            <div class="no-results">
+                No encontramos perfumes con esa combinación.
+            </div>
+        `;
+        return;
+    }
+    /*perfumesFiltrados = ordenarPerfumes(perfumesFiltrados);*/
     let listaFinal = mostrandoTodo
         ? perfumesFiltrados
         : perfumesFiltrados.slice(0, LIMITE);
@@ -237,6 +308,60 @@ function initCatalogo() {
             const filtro = button.dataset.filter;
             renderPerfumes(filtro);
         });
+    });
+    const sortButtons = document.querySelectorAll(".sort-btn");
+    /*
+    sortButtons.forEach(button => {
+        button.addEventListener("click", () => {
+
+            document.querySelector(".sort-btn.active-sort")?.classList.remove("active-sort");
+
+            button.classList.add("active-sort");
+
+            ordenActual = button.dataset.sort;
+
+            mostrandoTodo = false;
+            renderPerfumes(filtroActual);
+        });
+    });*/
+    const openBtn = document.getElementById("openAromaFilter");
+    const closeBtn = document.getElementById("closeAromaFilter");
+    const overlay = document.getElementById("aromaOverlay");
+    const panel = document.getElementById("aromaPanel");
+    const chips = document.querySelectorAll(".aroma-chip");
+    const applyBtn = document.getElementById("applyAromaFilter");
+
+    openBtn.addEventListener("click", () => {
+        overlay.classList.add("show");
+        panel.classList.add("show");
+    });
+
+    function closePanel() {
+        overlay.classList.remove("show");
+        panel.classList.remove("show");
+    }
+
+    closeBtn.addEventListener("click", closePanel);
+    overlay.addEventListener("click", closePanel);
+
+    chips.forEach(chip => {
+        chip.addEventListener("click", () => {
+            chip.classList.toggle("active");
+
+            const aroma = chip.dataset.aroma;
+
+            if (aromasSeleccionados.includes(aroma)) {
+                aromasSeleccionados = aromasSeleccionados.filter(a => a !== aroma);
+            } else {
+                aromasSeleccionados.push(aroma);
+            }
+        });
+    });
+
+    applyBtn.addEventListener("click", () => {
+        mostrandoTodo = false;
+        renderPerfumes(filtroActual);
+        closePanel();
     });
 
     renderPerfumes("all");

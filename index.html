@@ -5,17 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Auréa</title>
 
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/catalogo.css">
-    <link rel="stylesheet" href="css/detalle.css">
-    <link rel="stylesheet" href="css/carrito.css">
-    <link rel="stylesheet" href="css/admin.css">
+    <!-- VERSION  -->
+    <script src="js/version.js"></script>
+    <script>
+        function versioned(path) {
+            return path + "?v=" + APP_VERSION;
+        }
+    </script>
 
+    <!-- CSS VERSIONADOS -->
+    <script>
+        document.write('<link rel="stylesheet" href="' + versioned('css/base.css') + '">');
+        document.write('<link rel="stylesheet" href="' + versioned('css/layout.css') + '">');
+        document.write('<link rel="stylesheet" href="' + versioned('css/components.css') + '">');
+        document.write('<link rel="stylesheet" href="' + versioned('css/catalogo.css') + '">');
+        document.write('<link rel="stylesheet" href="' + versioned('css/detalle.css') + '">');
+        document.write('<link rel="stylesheet" href="' + versioned('css/carrito.css') + '">');
+        document.write('<link rel="stylesheet" href="' + versioned('css/admin.css') + '">');
+    </script>
 
 </head>
 <body>
@@ -34,16 +43,10 @@
         </nav>
     </header>
     
-
     <!-- CONTENIDO PRINCIPAL -->
     <main class="container">
-        <!--div class="intro-explore">
-            <p>
-                Explora el catálogo. Toca cualquier perfume para ver notas,
-                temporadas y más información.
-            </p>
-        </div>  -->
-       <div class="mini-info-block">
+        
+        <div class="mini-info-block">
             <h3>Cómo hacer tu pedido</h3>
             <div class="mini-steps">
                 <div class="mini-step">
@@ -78,13 +81,70 @@
                     </div>
                     <p>Envía tu pedido por WhatsApp automáticamente</p>
                 </div>
+                
             </div>
+            <!--
+            <div class="trust-social">
+                <a href="https://instagram.com/jhon.htz" target="_blank" class="social-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5"/>
+                        <circle cx="12" cy="12" r="4"/>
+                        <circle cx="18" cy="6" r="1"/>
+                    </svg>
+                    jhon.htz
+                </a>
+                
+                <a href="https://facebook.com/perfumescam" target="_blank" class="social-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                    </svg>
+                    perfumescam
+                
+            </div> </a> -->
         </div>
 
+        <!--
+        <button class="filter-btn sort-btn" data-sort="random">Aleatorio</button>
+        <button class="filter-btn sort-btn" data-sort="price-desc">Mayor precio</button>
+        <button class="filter-btn sort-btn" data-sort="price-asc">Menor precio</button>
+        -->
 
+        <div class="aroma-filter-trigger">
+            <button id="openAromaFilter" class="aroma-btn">
+                Filtrar por aroma
+            </button>
+        </div>
+
+        <!-- PANEL DESLIZANTE -->
+        <div id="aromaOverlay" class="aroma-overlay"></div>
+
+        <div id="aromaPanel" class="aroma-panel">
+
+            <div class="aroma-header">
+                <h3>Selecciona aromas</h3>
+                <button id="closeAromaFilter">✕</button>
+            </div>
+
+            <div class="aroma-options">
+                <button class="aroma-chip" data-aroma="citricos">Cítrico</button>
+                <button class="aroma-chip" data-aroma="florales">Floral</button>
+                <button class="aroma-chip" data-aroma="frutales">Frutal</button>
+                <button class="aroma-chip" data-aroma="dulces">Dulce</button>
+                <button class="aroma-chip" data-aroma="maderas">Amaderado</button>
+                <button class="aroma-chip" data-aroma="especias">Especiado</button>
+                <button class="aroma-chip" data-aroma="natural_sintetico">Fresco</button>
+            </div>
+
+            <button id="applyAromaFilter" class="apply-aroma-btn">
+                Aplicar filtro
+            </button>
+
+        </div>
 
         <section class="perfume-grid" id="perfumeGrid">
-
+             
             <!-- Card ejemplo (luego se generarán dinámicamente) -->
             <a href="perfume.html?id=1" class="perfume-card" data-genero="mujer">
                 
@@ -100,6 +160,7 @@
                 </div>
             </a>
         </section>
+
     </main>
 
     <button id="adminToggle" class="admin-toggle">+</button>
@@ -229,21 +290,20 @@
         </div>
     </div>
 
-
-    <script src="data/iconsUso.js"></script>
-    <script src="data/notas.js"></script>
-    <script src="data/imagenes.js"></script>
+   <!-- JS VERSIONADOS -->
     <script>
-        document.write(
-            '<script src="data/perfumes.js?v=' + Date.now() + '"><\/script>'
-        );
+        document.write('<script src="' + versioned('data/iconsUso.js') + '"><\/script>');
+        document.write('<script src="' + versioned('data/notas.js') + '"><\/script>');
+        document.write('<script src="' + versioned('data/imagenes.js') + '"><\/script>');
+        document.write('<script src="' + versioned('data/perfumes.js') + '"><\/script>');
+        document.write('<script src="' + versioned('js/core.js') + '"><\/script>');
+        document.write('<script src="' + versioned('js/catalogo.js') + '"><\/script>');
+        document.write('<script src="' + versioned('js/admin.js') + '"><\/script>');
+        document.write('<script src="' + versioned('js/cart.js') + '"><\/script>');
+        document.write('<script src="' + versioned('script.js') + '"><\/script>');
     </script>
 
-    <script src="js/core.js"></script>
-    <script src="js/catalogo.js"></script>
-    <script src="js/admin.js"></script>
-    <script src="js/cart.js"></script>
-    <script src="script.js"></script>
+    <!-- CARRITO FLOTANTE -->
 
     <a href="carrito.html" class="cart-floating">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"

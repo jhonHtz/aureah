@@ -5,13 +5,22 @@
     <title>Carrito | Auréa</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/catalogo.css">
-    <link rel="stylesheet" href="css/detalle.css">
-    <link rel="stylesheet" href="css/carrito.css">
-    <link rel="stylesheet" href="css/admin.css">
+    <script src="js/version.js"></script>
+    <script>
+        function versioned(path) {
+            return path + "?v=" + APP_VERSION;
+        }
+    </script>
+
+    <script>
+        document.write('<link rel="stylesheet" href="' + versioned('css/base.css') + '">');
+        document.write('<link rel="stylesheet" href="' + versioned('css/layout.css') + '">');
+        document.write('<link rel="stylesheet" href="' + versioned('css/components.css') + '">');
+        document.write('<link rel="stylesheet" href="' + versioned('css/catalogo.css') + '">');
+        document.write('<link rel="stylesheet" href="' + versioned('css/detalle.css') + '">');
+        document.write('<link rel="stylesheet" href="' + versioned('css/carrito.css') + '">');
+        document.write('<link rel="stylesheet" href="' + versioned('css/admin.css') + '">');
+    </script>
 
 </head>
 <body>
@@ -30,6 +39,7 @@
 
 </main>
 
+
 <script src="data/iconsUso.js"></script>
 <script src="data/notas.js"></script>
 <script src="data/imagenes.js"></script>
@@ -39,9 +49,18 @@
     );
 </script>
 
-<script src="js/core.js"></script>
-<script src="js/cart.js"></script>
-<script src="script.js"></script>
+<script>
+    document.write('<script src="' + versioned('data/iconsUso.js') + '"><\/script>');
+    document.write('<script src="' + versioned('data/notas.js') + '"><\/script>');
+    document.write('<script src="' + versioned('data/imagenes.js') + '"><\/script>');
+    document.write('<script src="' + versioned('data/perfumes.js') + '"><\/script>');
+    document.write('<script src="' + versioned('js/core.js') + '"><\/script>');
+    document.write('<script src="' + versioned('js/catalogo.js') + '"><\/script>');
+    document.write('<script src="' + versioned('js/detalle.js') + '"><\/script>');
+    document.write('<script src="' + versioned('js/admin.js') + '"><\/script>');
+    document.write('<script src="' + versioned('js/cart.js') + '"><\/script>');
+    document.write('<script src="' + versioned('script.js') + '"><\/script>');
+</script>
 
 </body>
 </html>

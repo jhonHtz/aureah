@@ -31,16 +31,6 @@ const notasDisponibles = {
     "citricos": "assets/img/notes/citricos/citricos.jpg",
     "neroli": "assets/img/notes/citricos/neroli.jpg",
     "tangerina": "assets/img/notes/citricos/tangerina.jpg",
-    "": "assets/img/notes/citricos/.jpg",
-    "": "assets/img/notes/citricos/.jpg",
-    "": "assets/img/notes/citricos/.jpg",
-    "": "assets/img/notes/citricos/.jpg",
-    "": "assets/img/notes/citricos/.jpg",
-    "": "assets/img/notes/citricos/.jpg",
-    "": "assets/img/notes/citricos/.jpg",
-    "": "assets/img/notes/citricos/.jpg",
-
-    
 
     //FLORALES
     "jazmín sambac (sampaguita)": "assets/img/notes/florales/jazmin.jpg",
@@ -118,15 +108,6 @@ const notasDisponibles = {
     "ciruela": "assets/img/notes/frutales/ciruela.jpg",
     "mirabel": "assets/img/notes/frutales/mirabel.jpg",
     "castaña": "assets/img/notes/frutales/castaña.jpg",
-    "": "assets/img/notes/frutales/.jpg",
-    "": "assets/img/notes/frutales/.jpg",
-    "": "assets/img/notes/frutales/.jpg",
-    "": "assets/img/notes/frutales/.jpg",
-    "": "assets/img/notes/frutales/.jpg",
-    "": "assets/img/notes/frutales/.jpg",
-    "": "assets/img/notes/frutales/.jpg",
-    "": "assets/img/notes/frutales/.jpg",
-
 
     //ALMIZCLE-AMBAR
     "almizcle": "assets/img/notes/almizcle-ambar-animalicos/almizcle.jpg",
@@ -142,12 +123,7 @@ const notasDisponibles = {
     "cuero": "assets/img/notes/almizcle-ambar-animalicos/cuero.jpg",
     "trufa": "assets/img/notes/almizcle-ambar-animalicos/trufa.jpg",
     "gamuza": "assets/img/notes/almizcle-ambar-animalicos/gamuza.jpg",
-    "": "assets/img/notes/almizcle-ambar-animalicos/.jpg",
-    "": "assets/img/notes/almizcle-ambar-animalicos/.jpg",
-    "": "assets/img/notes/almizcle-ambar-animalicos/.jpg",
-    "": "assets/img/notes/almizcle-ambar-animalicos/.jpg",
-
-
+ 
     //MADERAS
     "pachulí": "assets/img/notes/maderas/pachulí.jpg",
     "notas amaderadas": "assets/img/notes/maderas/madera.jpg",
@@ -173,12 +149,6 @@ const notasDisponibles = {
     "madera de gaiac": "assets/img/notes/maderas/madera guayacan.jpg",
     "roble": "assets/img/notes/maderas/roble.jpg",
     "cipres": "assets/img/notes/maderas/cipres.jpg",
-    "": "assets/img/notes/maderas/.jpg",
-    "": "assets/img/notes/maderas/.jpg",
-    "": "assets/img/notes/maderas/.jpg",
-    "": "assets/img/notes/maderas/.jpg",
-    "": "assets/img/notes/maderas/.jpg",
-    "": "assets/img/notes/maderas/.jpg",
 
     //ESPECIAS
     "pimienta rosa": "assets/img/notes/especias/pimienta rosa.jpg",
@@ -198,10 +168,7 @@ const notasDisponibles = {
     "notas orientales": "assets/img/notes/especias/notas orientales.jpg",
     "nuez moscada": "assets/img/notes/especias/nuez.jpg",
     "nuez": "assets/img/notes/especias/nuez.jpg",
-    "": "assets/img/notes/especias/.jpg",
-    "": "assets/img/notes/especias/.jpg",
-    "": "assets/img/notes/especias/.jpg",
-
+ 
     "flor de jengibre": "assets/img/notes/especias/jengibre.jpg",
     "jengibre": "assets/img/notes/especias/jengibre.jpg",
 
@@ -219,15 +186,6 @@ const notasDisponibles = {
     "pimienta de jamaica": "assets/img/notes/especias/pimienta roja.jpg",
 
     "cilantro": "assets/img/notes/especias/cilantro.jpg",
-    "": "assets/img/notes/especias/.jpg",
-    "": "assets/img/notes/especias/.jpg",
-    "": "assets/img/notes/especias/.jpg",
-    "": "assets/img/notes/especias/.jpg",
-    "": "assets/img/notes/especias/.jpg",
-    "": "assets/img/notes/especias/.jpg",
-    "": "assets/img/notes/especias/.jpg",
-    "": "assets/img/notes/especias/.jpg",
-    
 
     //  NATURAL SINTETICO
     "pomarose": "assets/img/notes/natural_sintetico/pomarose.jpg",
@@ -245,9 +203,7 @@ const notasDisponibles = {
     "humo": "assets/img/notes/natural_sintetico/humo.jpg",
     "notas minerales": "assets/img/notes/natural_sintetico/minerales.jpg",
     "ambrofix": "assets/img/notes/natural_sintetico/ambrofix.jpg",
-    "": "assets/img/notes/natural_sintetico/.jpg",
-    "": "assets/img/notes/natural_sintetico/.jpg",
-    "": "assets/img/notes/natural_sintetico/.jpg",
+
 
      //  DULCEEE
     "panna cotta": "assets/img/notes/dulces/panacota.jpg",
@@ -258,9 +214,6 @@ const notasDisponibles = {
     "caramelo": "assets/img/notes/dulces/caramelo.jpg",
     "miel": "assets/img/notes/dulces/miel.jpg",
     "azucar": "assets/img/notes/dulces/azucar.jpg",
-    "": "assets/img/notes/dulces/.jpg",
-    "": "assets/img/notes/dulces/.jpg",
-    "": "assets/img/notes/dulces/.jpg",
 
      //  BEBIDAS
     "ron": "assets/img/notes/bebida/ron.jpg",
@@ -273,10 +226,7 @@ const notasDisponibles = {
     "ginebra": "assets/img/notes/bebida/ginebra.jpg",
     "té de jazmín": "assets/img/notes/bebida/te.jpg",
     "wisky": "assets/img/notes/bebida/wisky.jpg",
-    "": "assets/img/notes/bebida/.jpg",
-    "": "assets/img/notes/bebida/.jpg",
-    "": "assets/img/notes/bebida/.jpg",
-    "": "assets/img/notes/bebida/.jpg",
+
 
     // RESINAS BALSAMOS
     "incienso": "assets/img/notes/resinabalsamo/incienso.jpg",
@@ -300,8 +250,5 @@ const notasDisponibles = {
     "enebro": "assets/img/notes/herbales/enebro.jpg",
     "romero": "assets/img/notes/herbales/romero.jpg",
     "abrótano": "assets/img/notes/herbales/artemisa.jpg",
-    "": "assets/img/notes/herbales/.jpg",
-    "": "assets/img/notes/herbales/.jpg",
 
-    
 };
