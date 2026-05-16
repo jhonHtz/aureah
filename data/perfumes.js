@@ -1227,7 +1227,7 @@ const perfumes = [
         "subtitulo": "EDT",
         "genero": "hombre",
         "precioOriginal": 2750,
-        "precioFinal": 1130,
+        "precioFinal": 1229,
         "imagen": "assets/img/perfumes/legendspirit.png",
         "notas": {
             "salida": [
@@ -1272,7 +1272,8 @@ const perfumes = [
                 "porcentaje": 19,
                 "activo": false
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771098411886,
@@ -1281,7 +1282,7 @@ const perfumes = [
         "subtitulo": "EDP",
         "genero": "hombre",
         "precioOriginal": 2920,
-        "precioFinal": 1230,
+        "precioFinal": 1350,
         "imagen": "assets/img/perfumes/mb.png",
         "notas": {
             "salida": [
@@ -1338,7 +1339,7 @@ const perfumes = [
         "subtitulo": "EDP",
         "genero": "hombre",
         "precioOriginal": 2920,
-        "precioFinal": 1380,
+        "precioFinal": 1480,
         "imagen": "assets/img/perfumes/mexplor.png",
         "notas": {
             "salida": [
@@ -1392,7 +1393,7 @@ const perfumes = [
         "subtitulo": "EDP",
         "genero": "hombre",
         "precioOriginal": 2590,
-        "precioFinal": 1230,
+        "precioFinal": 1290,
         "imagen": "assets/img/perfumes/coach.png",
         "notas": {
             "salida": [
@@ -1492,7 +1493,7 @@ const perfumes = [
         "subtitulo": "EDT",
         "genero": "hombre",
         "precioOriginal": 1650,
-        "precioFinal": 880,
+        "precioFinal": 980,
         "imagen": "assets/img/perfumes/halloween.png",
         "notas": {
             "salida": [
@@ -1539,7 +1540,8 @@ const perfumes = [
                 "porcentaje": 84,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771102323832,
@@ -1547,8 +1549,8 @@ const perfumes = [
         "nombre": "WANTED INTENSE 100ml",
         "subtitulo": "EDT",
         "genero": "hombre",
-        "precioOriginal": 2790,
-        "precioFinal": 1380,
+        "precioOriginal": 2889,
+        "precioFinal": 1580,
         "imagen": "assets/img/perfumes/tmw.png",
         "notas": {
             "salida": [
@@ -1587,7 +1589,8 @@ const perfumes = [
                 "porcentaje": 89,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771102437377,
@@ -1595,8 +1598,8 @@ const perfumes = [
         "nombre": "THE MOST WANTED 100ml",
         "subtitulo": "EDP",
         "genero": "hombre",
-        "precioOriginal": 2950,
-        "precioFinal": 1550,
+        "precioOriginal": 2990,
+        "precioFinal": 1690,
         "imagen": "assets/img/perfumes/tmwi.png",
         "notas": {
             "salida": [
@@ -1634,7 +1637,8 @@ const perfumes = [
                 "porcentaje": 96,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771102559260,
@@ -1745,7 +1749,7 @@ const perfumes = [
         "subtitulo": "EDT",
         "genero": "hombre",
         "precioOriginal": 2800,
-        "precioFinal": 1440,
+        "precioFinal": 1580,
         "imagen": "assets/img/perfumes/dylan blue.png",
         "notas": {
             "salida": [
@@ -1792,7 +1796,8 @@ const perfumes = [
                 "porcentaje": 74,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771104144210,
@@ -1801,7 +1806,7 @@ const perfumes = [
         "subtitulo": "EDP",
         "genero": "hombre",
         "precioOriginal": 3250,
-        "precioFinal": 1650,
+        "precioFinal": 1790,
         "imagen": "assets/img/perfumes/k.png",
         "notas": {
             "salida": [
@@ -1850,7 +1855,8 @@ const perfumes = [
                 "porcentaje": 71,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771136290356,
@@ -1858,8 +1864,8 @@ const perfumes = [
         "nombre": "EROS 100ml",
         "subtitulo": "EDT",
         "genero": "hombre",
-        "precioOriginal": 2800,
-        "precioFinal": 1380,
+        "precioOriginal": 3000,
+        "precioFinal": 1650,
         "imagen": "assets/img/perfumes/erosedt.png",
         "notas": {
             "salida": [
@@ -1905,7 +1911,8 @@ const perfumes = [
                 "porcentaje": 100,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771137545001,
@@ -1913,8 +1920,8 @@ const perfumes = [
         "nombre": "EROS EAU DE PARFUM 100ml",
         "subtitulo": "EDP",
         "genero": "hombre",
-        "precioOriginal": 3300,
-        "precioFinal": 1490,
+        "precioOriginal": 3500,
+        "precioFinal": 1890,
         "imagen": "assets/img/perfumes/eros.png",
         "notas": {
             "salida": [
@@ -1962,7 +1969,8 @@ const perfumes = [
                 "porcentaje": 100,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771138437539,
@@ -1970,8 +1978,8 @@ const perfumes = [
         "nombre": "ENERGY 100ml",
         "subtitulo": "EDP",
         "genero": "hombre",
-        "precioOriginal": 3300,
-        "precioFinal": 1589,
+        "precioOriginal": 3500,
+        "precioFinal": 2100,
         "imagen": "assets/img/perfumes/energy.png",
         "notas": {
             "salida": [
@@ -2018,7 +2026,8 @@ const perfumes = [
                 "porcentaje": 36,
                 "activo": false
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771138996168,
@@ -2026,8 +2035,8 @@ const perfumes = [
         "nombre": "212 VIP BLACK 100ml",
         "subtitulo": "EDP",
         "genero": "hombre",
-        "precioOriginal": 2680,
-        "precioFinal": 1730,
+        "precioOriginal": 2890,
+        "precioFinal": 1990,
         "imagen": "assets/img/perfumes/212.png",
         "notas": {
             "salida": [
@@ -2068,7 +2077,8 @@ const perfumes = [
                 "porcentaje": 100,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771139505419,
@@ -2076,8 +2086,8 @@ const perfumes = [
         "nombre": "212 VIP MEN 100ml",
         "subtitulo": "EDT",
         "genero": "hombre",
-        "precioOriginal": 2550,
-        "precioFinal": 1490,
+        "precioOriginal": 2750,
+        "precioFinal": 1750,
         "imagen": "assets/img/perfumes/212vip.png",
         "notas": {
             "salida": [
@@ -2123,7 +2133,8 @@ const perfumes = [
                 "porcentaje": 100,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771140212551,
@@ -2131,8 +2142,8 @@ const perfumes = [
         "nombre": "INVICTUS 100ml",
         "subtitulo": "EDT",
         "genero": "hombre",
-        "precioOriginal": 2790,
-        "precioFinal": 1690,
+        "precioOriginal": 2850,
+        "precioFinal": 1850,
         "imagen": "assets/img/perfumes/invictusedt.png",
         "notas": {
             "salida": [
@@ -2176,7 +2187,8 @@ const perfumes = [
                 "porcentaje": 31,
                 "activo": false
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771140621693,
@@ -2184,8 +2196,8 @@ const perfumes = [
         "nombre": "INVICTUS VICTORY ELIXIR 100ml",
         "subtitulo": "EDP",
         "genero": "hombre",
-        "precioOriginal": 3350,
-        "precioFinal": 2150,
+        "precioOriginal": 3420,
+        "precioFinal": 2450,
         "imagen": "assets/img/perfumes/invictuselixir.png",
         "notas": {
             "salida": [
@@ -2227,7 +2239,8 @@ const perfumes = [
                 "porcentaje": 100,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771141330977,
@@ -2235,8 +2248,8 @@ const perfumes = [
         "nombre": "INVICTUS PARFUM 100ml",
         "subtitulo": "Parfum",
         "genero": "hombre",
-        "precioOriginal": 3210,
-        "precioFinal": 2260,
+        "precioOriginal": 3280,
+        "precioFinal": 2390,
         "imagen": "assets/img/perfumes/invictusparfum.png",
         "notas": {
             "salida": [
@@ -2280,7 +2293,8 @@ const perfumes = [
                 "porcentaje": 79,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771186094584,
@@ -2288,8 +2302,8 @@ const perfumes = [
         "nombre": "THE ONE 100ml",
         "subtitulo": "EDP",
         "genero": "hombre",
-        "precioOriginal": 2750,
-        "precioFinal": 1850,
+        "precioOriginal": 2950,
+        "precioFinal": 1990,
         "imagen": "assets/img/perfumes/theone.png",
         "notas": {
             "salida": [
@@ -2333,7 +2347,8 @@ const perfumes = [
                 "porcentaje": 100,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771186654532,
@@ -2341,8 +2356,8 @@ const perfumes = [
         "nombre": "1 MILLION ELIXIR 100ml",
         "subtitulo": "Intense",
         "genero": "hombre",
-        "precioOriginal": 3350,
-        "precioFinal": 2280,
+        "precioOriginal": 3420,
+        "precioFinal": 2490,
         "imagen": "assets/img/perfumes/1elixir.png",
         "notas": {
             "salida": [
@@ -2385,7 +2400,8 @@ const perfumes = [
                 "porcentaje": 91,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771186834207,
@@ -2393,8 +2409,8 @@ const perfumes = [
         "nombre": "1 MILLION ROYAL 100ml",
         "subtitulo": "Parfum",
         "genero": "hombre",
-        "precioOriginal": 3210,
-        "precioFinal": 2190,
+        "precioOriginal": 3310,
+        "precioFinal": 2299,
         "imagen": "assets/img/perfumes/1royal.png",
         "notas": {
             "salida": [
@@ -2438,7 +2454,8 @@ const perfumes = [
                 "porcentaje": 100,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771192217325,
@@ -2446,8 +2463,8 @@ const perfumes = [
         "nombre": "BAD BOY COBALT 100ml",
         "subtitulo": "EDP",
         "genero": "hombre",
-        "precioOriginal": 3025,
-        "precioFinal": 1970,
+        "precioOriginal": 3140,
+        "precioFinal": 2290,
         "imagen": "assets/img/perfumes/bad.png",
         "notas": {
             "salida": [
@@ -2490,7 +2507,8 @@ const perfumes = [
                 "porcentaje": 91,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771192384412,
@@ -2498,8 +2516,8 @@ const perfumes = [
         "nombre": "BAD BOY COBALT ELIXIR 100ml",
         "subtitulo": "EDP",
         "genero": "hombre",
-        "precioOriginal": 3455,
-        "precioFinal": 2390,
+        "precioOriginal": 3590,
+        "precioFinal": 2490,
         "imagen": "assets/img/perfumes/badelixir.png",
         "notas": {
             "salida": [
@@ -2540,7 +2558,8 @@ const perfumes = [
                 "porcentaje": 100,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771193806657,
@@ -2595,8 +2614,8 @@ const perfumes = [
         "nombre": "SCANDAL LE PARFUM 100ml",
         "subtitulo": "EDP",
         "genero": "hombre",
-        "precioOriginal": 3320,
-        "precioFinal": 2130,
+        "precioOriginal": 3355,
+        "precioFinal": 2230,
         "imagen": "assets/img/perfumes/scandal.png",
         "notas": {
             "salida": [
@@ -2634,7 +2653,8 @@ const perfumes = [
                 "porcentaje": 100,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771194130832,
@@ -2690,8 +2710,8 @@ const perfumes = [
         "nombre": "LE BEAU 125ml",
         "subtitulo": "EDT",
         "genero": "hombre",
-        "precioOriginal": 2940,
-        "precioFinal": 1990,
+        "precioOriginal": 3050,
+        "precioFinal": 2090,
         "imagen": "assets/img/perfumes/lebeauedt.png",
         "notas": {
             "salida": [
@@ -2729,7 +2749,8 @@ const perfumes = [
                 "porcentaje": 34,
                 "activo": false
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771194505062,
@@ -2737,8 +2758,8 @@ const perfumes = [
         "nombre": "LE BEAU LE PARFUM 125ml",
         "subtitulo": "EDP",
         "genero": "hombre",
-        "precioOriginal": 3380,
-        "precioFinal": 2480,
+        "precioOriginal": 3510,
+        "precioFinal": 2500,
         "imagen": "assets/img/perfumes/lebeau.png",
         "notas": {
             "salida": [
@@ -2783,7 +2804,8 @@ const perfumes = [
                 "porcentaje": 89,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771194677062,
@@ -2791,8 +2813,8 @@ const perfumes = [
         "nombre": "LE BEAU PARADISE GARDEN 125ml",
         "subtitulo": "EDP",
         "genero": "hombre",
-        "precioOriginal": 3295,
-        "precioFinal": 2290,
+        "precioOriginal": 3355,
+        "precioFinal": 2489,
         "imagen": "assets/img/perfumes/paradise.png",
         "notas": {
             "salida": [
@@ -2836,7 +2858,8 @@ const perfumes = [
                 "porcentaje": 41,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771194916841,
@@ -2844,7 +2867,7 @@ const perfumes = [
         "nombre": "LE MALE LE PARFUM 125ml",
         "subtitulo": "EDP",
         "genero": "hombre",
-        "precioOriginal": 3190,
+        "precioOriginal": 3305,
         "precioFinal": 2390,
         "imagen": "assets/img/perfumes/lemale.png",
         "notas": {
@@ -2886,7 +2909,8 @@ const perfumes = [
                 "porcentaje": 91,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771195078697,
@@ -2894,8 +2918,8 @@ const perfumes = [
         "nombre": "LE MALE ELIXIR 125ml",
         "subtitulo": "Parfum",
         "genero": "hombre",
-        "precioOriginal": 3420,
-        "precioFinal": 2360,
+        "precioOriginal": 3540,
+        "precioFinal": 2460,
         "imagen": "assets/img/perfumes/elixir.png",
         "notas": {
             "salida": [
@@ -2937,7 +2961,8 @@ const perfumes = [
                 "porcentaje": 100,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771195472400,
@@ -2995,8 +3020,8 @@ const perfumes = [
         "nombre": "INTENSE 100ml",
         "subtitulo": "EDP",
         "genero": "hombre",
-        "precioOriginal": 3850,
-        "precioFinal": 2850,
+        "precioOriginal": 3990,
+        "precioFinal": 2990,
         "imagen": "assets/img/perfumes/valentino.png",
         "notas": {
             "salida": [
@@ -3034,7 +3059,8 @@ const perfumes = [
                 "porcentaje": 50,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771196489260,
@@ -3042,8 +3068,8 @@ const perfumes = [
         "nombre": "CORAL FANTASY 100ml",
         "subtitulo": "EDT",
         "genero": "hombre",
-        "precioOriginal": 3150,
-        "precioFinal": 2550,
+        "precioOriginal": 3400,
+        "precioFinal": 2650,
         "imagen": "assets/img/perfumes/coralhombre.png",
         "notas": {
             "salida": [
@@ -3087,7 +3113,8 @@ const perfumes = [
                 "porcentaje": 94,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771196645332,
@@ -3095,8 +3122,8 @@ const perfumes = [
         "nombre": "EXTRADOSE 100ml",
         "subtitulo": "Parfum",
         "genero": "hombre",
-        "precioOriginal": 4200,
-        "precioFinal": 2890,
+        "precioOriginal": 4500,
+        "precioFinal": 3099,
         "imagen": "assets/img/perfumes/extradose.png",
         "notas": {
             "salida": [
@@ -3134,7 +3161,8 @@ const perfumes = [
                 "porcentaje": 100,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771197318688,
@@ -3142,8 +3170,8 @@ const perfumes = [
         "nombre": "STRONGER WITH YOU INTENSILY 100ml",
         "subtitulo": "EDP",
         "genero": "hombre",
-        "precioOriginal": 3550,
-        "precioFinal": 2490,
+        "precioOriginal": 2990,
+        "precioFinal": 2290,
         "imagen": "assets/img/perfumes/sint.png",
         "notas": {
             "salida": [
@@ -3189,7 +3217,8 @@ const perfumes = [
                 "porcentaje": 100,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771197475470,
@@ -3247,8 +3276,8 @@ const perfumes = [
         "nombre": "STRONGER WITH YOU PARFUM 100ml",
         "subtitulo": "Parfum",
         "genero": "hombre",
-        "precioOriginal": 3090,
-        "precioFinal": 2190,
+        "precioOriginal": 3190,
+        "precioFinal": 2388,
         "imagen": "assets/img/perfumes/sparfum.png",
         "notas": {
             "salida": [
@@ -3291,7 +3320,8 @@ const perfumes = [
                 "porcentaje": 94,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771261446519,
@@ -3299,8 +3329,8 @@ const perfumes = [
         "nombre": "PROFONDO EDP 100ml",
         "subtitulo": "EDP",
         "genero": "hombre",
-        "precioOriginal": 3600,
-        "precioFinal": 2460,
+        "precioOriginal": 3760,
+        "precioFinal": 2559,
         "imagen": "assets/img/perfumes/profondoedp.png",
         "notas": {
             "salida": [
@@ -3344,7 +3374,8 @@ const perfumes = [
                 "porcentaje": 39,
                 "activo": false
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771261621880,
@@ -3352,8 +3383,8 @@ const perfumes = [
         "nombre": "PROFONDO PARFUM 100ml",
         "subtitulo": "Parfum",
         "genero": "hombre",
-        "precioOriginal": 4050,
-        "precioFinal": 2560,
+        "precioOriginal": 4350,
+        "precioFinal": 2660,
         "imagen": "assets/img/perfumes/profondoparfum.png",
         "notas": {
             "salida": [
@@ -3393,7 +3424,8 @@ const perfumes = [
                 "porcentaje": 26,
                 "activo": false
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771264347295,
@@ -3401,8 +3433,8 @@ const perfumes = [
         "nombre": "BIR EAU DE TOILETTE 100ml",
         "subtitulo": "EDT",
         "genero": "hombre",
-        "precioOriginal": 3150,
-        "precioFinal": 2400,
+        "precioOriginal": 3400,
+        "precioFinal": 2500,
         "imagen": "assets/img/perfumes/valentinoedt.png",
         "notas": {
             "salida": [
@@ -3444,7 +3476,8 @@ const perfumes = [
                 "porcentaje": 61,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771264723350,
@@ -3553,8 +3586,8 @@ const perfumes = [
         "nombre": "Y 100ml",
         "subtitulo": "EDP",
         "genero": "hombre",
-        "precioOriginal": 3600,
-        "precioFinal": 2450,
+        "precioOriginal": 3760,
+        "precioFinal": 2550,
         "imagen": "assets/img/perfumes/ysl.png",
         "notas": {
             "salida": [
@@ -3599,7 +3632,8 @@ const perfumes = [
                 "porcentaje": 89,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771265770598,
@@ -3607,8 +3641,8 @@ const perfumes = [
         "nombre": "MYSLF 100ml",
         "subtitulo": "EDP",
         "genero": "hombre",
-        "precioOriginal": 3700,
-        "precioFinal": 2550,
+        "precioOriginal": 4500,
+        "precioFinal": 3100,
         "imagen": "assets/img/perfumes/myslf.png",
         "notas": {
             "salida": [
@@ -3657,8 +3691,8 @@ const perfumes = [
         "nombre": "SAUVAGE EDP 100ml",
         "subtitulo": "EDP",
         "genero": "hombre",
-        "precioOriginal": 3650,
-        "precioFinal": 3150,
+        "precioOriginal": 3700,
+        "precioFinal": 3250,
         "imagen": "assets/img/perfumes/sauvageedp.png",
         "notas": {
             "salida": [
@@ -3700,7 +3734,8 @@ const perfumes = [
                 "porcentaje": 91,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771267411809,
@@ -3708,8 +3743,8 @@ const perfumes = [
         "nombre": "SAUVAGE PARFUM 100ml",
         "subtitulo": "Parfum",
         "genero": "hombre",
-        "precioOriginal": 4380,
-        "precioFinal": 3380,
+        "precioOriginal": 4450,
+        "precioFinal": 3580,
         "imagen": "assets/img/perfumes/sauvageparfum.png",
         "notas": {
             "salida": [
@@ -3751,7 +3786,8 @@ const perfumes = [
                 "porcentaje": 91,
                 "activo": true
             }
-        }
+        },
+        "disponible": true
     },
     {
         "id": 1771432516801,
